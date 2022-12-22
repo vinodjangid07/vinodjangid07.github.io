@@ -106,7 +106,7 @@ body{
     display: none;
 }
 
-#switch:checked+#label {
+#switch:checked+#label { 
     background-color: transparent;
     background-image: url(src/svg/Speaker_Icon.svg);
     background-size:30%;
