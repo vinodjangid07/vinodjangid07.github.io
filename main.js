@@ -26,10 +26,12 @@ function playpause() {
 
 
 let emptyArea = document.getElementById("emptyarea");
+ let mobileTogglemenu = document.getElementById("mobiletogglemenu");
 // toggle menu by clicking on hamburger
 function hamburgerMenu() {
     document.body.classList.toggle("stopscrolling");
-document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
+ document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
+ document.getElementById("emptyarea").classList.toggle("blur-class");
 document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
 document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
 document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
