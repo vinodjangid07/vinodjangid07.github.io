@@ -936,13 +936,13 @@ border: none;
   cursor: pointer;
   /* display: none; */
   display: flex;
-transform: translate(500px);
-transition-duration: 1s;
+transform: translate(1000px);
+transition-duration: 1.4s;
  
 }
 .show-toggle-menu{
     transform: translate(0);
-    transition-duration: 1s;
+    transition-duration: .6s;
 }
 
 
@@ -962,8 +962,8 @@ transition-duration: 1s;
 }
 .blur-class{
     opacity: 1;
-   transition-delay: .6s;
-    transition-duration: .6s;
+   transition-delay: .4s;
+    transition-duration: .3s;
     
 }
 
