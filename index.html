@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000">
+    <title>Vinod Jangid -- Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="faviconjpground.png">
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
+  </head>
+<body>
+    <audio loop="" id="audioPlayer" autoplay="" style="display:none"><source src="src/mp3/preloader.mp3" type="audio/mp3"></audio>
+    <div id="preloader"></div>
+   
+    <header>
+      
+         
+        <div class="navbar" id="navbar">
+            <div class="logo">Vinod</div>
+            <div class="navbar-tabs" id="navbar-tabs">
+                <ul class="navbar-tabs-ul">
+                    <a href="#home">
+                        <li class="home activeThistab" class="navbar-tabs-li "data-aos="fade-down" data-aos-delay="100">Home();</li></a>
+                    <a href="#about">
+                    <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">AboutMe();</li></a>
+                    <a href="#skills">
+                    <li class="skills" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="500">Skills();</li></a>
+                    <a href="#projects">
+                    <li class="projects" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="700">Projects();</li></a>
+                    
+                </ul>
+
+               
+            </div><!-- navbar tabs ends -->
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <main>
+        
+        <!-- hamburger -->
+        <div class="hamburger" id="hamburger" data-aos="fade">
+            <div class="hamburgerbase">
+            <button id="hamburger-button" onclick="hamburgerMenu()">
+                <span class="burger-bar" id="burger-bar1"></span>
+                <span class="burger-bar" id="burger-bar2"></span>
+                <span class="burger-bar" id="burger-bar3"></span></button>
+            </div>
+        </div>
+        <!-- hamburger -->
+        <div class="mobiletogglemenu" id="mobiletogglemenu">
+            <div class="emptyarea" id="emptyarea"></div>
+            <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                <a href="#home">
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">Home();</li></a>
+                <a href="#about">
+                <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">AboutMe();</li></a>
+                <a href="#skills">
+                <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"onclick="hidemenubyli()">Skills();</li></a>
+                <a href="#projects">
+                <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">Projects();</li></a>
+                
+            </ul>
+        </div>
+        <!-- mobile toggle menu ends -->
+        <div class="fakenavbar"></div>
+        <section class="landing-page-container" id="home">
+            
+            <div class="text-content">
+                <p id="hello-friend" data-aos="fade"data-aos-delay="100" data-aos-duration="3000">Namaste(); I'm</p>
+                <span id="name" data-aos="fade"data-aos-delay="500" data-aos-duration="3000">Vinod Jangid.</span>
+                <p id="work" data-aos="fade"data-aos-delay="1000" data-aos-duration="3000">I build things for the web.</p>
+                <p id="info-para" data-aos="fade"data-aos-delay="1500" data-aos-duration="3000">Web Developer with experience of Visual Concept Arts, Fronted Web Designs. I Love fun Web UI, collaboration and making products.<br> 
+                    <br> I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                <div class="contact-btn-div"data-aos="fade"
+                data-aos-delay="2000" data-aos-duration="3000">
+                
+                    <a href="mailto:infovinodjangid@gmail.com">
+                    <button class="contact-btn" id="contact-btn">LetsTalk();
+                    </button></a>
+                    
+                    <div class="togglebuttoncontainer">
+                        
+                        <input type="checkbox" id="switch" onclick="playpause()">
+                        <label for="switch" id="label"></label>
+                  
+                      </div> 
+                   </div>
+            </div>
+           
+        </section>
+        <!-- landing page ends here -->
+        <section class="about-section-container" id="about" data-aos="fade-up">
+            <div class="about-section">
+                <div class="about-heading"><article>AboutMe();</article><p></p></div>
+                
+                <div class="info-dp-section">
+                    <div class="about-info">
+                        <p>Hi! My name is Vinod i'm a Web Developer and Digital Visual Artist, I love creating things that exists on the internet. My interest in web development started in 2021 when i thought to upload my Digital Concept Arts Online.</p> <br>
+                        <p>Instead of making a online Concepts Art website, i started enjoying web development. Creating custom things for web taught me a lot about HTML & CSS! </p> <br>
+                           <p> My main focus these days is building interesting & creative web designs, I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+
+                    </div>
+
+                    <div class="dp" data-aos="fade-up"><img src="src/jpg/vinnybava-min.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends  -->
+        
+        <section class="skills-section-container" id="skills">
+            <div class="skills-section">
+                <div class="skills-heading" data-aos="fade-up"><article>Skills();</article><p></p></div>
+                
+                <div class="frontend-dev-section">
+
+                    <div class="frontend-dev-heading" data-aos="fade-up">Frontend Developer</div>
+                    <div class="language-speak"><article>>_ Languages i speak:</article></div>
+                    <div class="languages-section">
+
+                        <div class="language-name"data-aos="fade-up" data-tilt-glare data-tilt-max-glare="0.3"><article>HTML</article>
+                        <p>INTERMEDIATE!</p></div>
+                        <div class="language-name"data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>CSS</article>
+                            <p>ADVANCED!</p></div>
+                            <div class="language-name"data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>BOOTSTRAP</article>
+                                <p>INTERMEDIATE!</p></div>
+                                <div class="language-name"data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>REACT JS</article>
+                                    <p>BEGINNER!</p></div>
+                                <div class="language-name"data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>JAVASCRIPT</article>
+                                    <p>INTERMEDIATE!</p></div>
+                                    
+
+                    </div>
+
+                </div>
+                <div class="designing-section frontend-dev-section">
+
+                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up">Designer</div>
+                    <div class="enjoy-designing language-speak" data-aos="fade-up"><article>Things i enjoy Designing:</article></div>
+                    <div class="tool-section languages-section">
+
+                        <div class="tool-name language-name" data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>ADOBE PHOTOSHOP</article>
+                        <p>ADVANCED!</p></div>
+                            <div class="tool-name language-name" data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>CANVA</article>
+                                <p>INTERMEDIATE!</p></div>
+                                <div class="tool-name language-name" data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>ADOBE AI</article>
+                                    <p>BEGINNER!</p></div>
+                               
+                                    
+
+                    </div>
+
+                </div>
+                <div class="other-languages frontend-dev-section">
+
+                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up">Programmer</div>
+                    <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Other Languages i Know:</article></div>
+                    <div class="programming-section languages-section">
+
+                        <div class="language-name language-name" data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>C</article>
+                        <p>INTERMEDIATE!</p></div>
+                        <div class="language-name language-name" data-aos="fade-up"data-tilt-glare data-tilt-max-glare="0.3"><article>C++</article>
+                            <p>BEGINNER!</p></div>  
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- skills section ends -->
+        <section class="projects-section-container" id="projects">
+            <div class="projects-section-div">
+                <div class="projects-heading"><article>Projects();</article><p></p></div>
+                <div class="project-boxes-div">
+
+                    <a href="https://vinodjangid07.github.io/AXOCEAN/"><div class="project-box project-box1">
+                    <div class="icons-for-projects">
+                        <div class="folder-icon"></div>
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                    <div class="about-project">
+                    <article>AXOCEAN E-COMMERCE WEBSITE</article>
+                    <p>A webpage for E-COMMERCE for helping people to choose their product design and redirect to the FlipKart shopping site. </p>
+                </div>
+                </div></a>
+
+                <a href="https://vinodjangid07.github.io/Aquaregia/"><div class="project-box project-box2">
+                    <div class="icons-for-projects">
+                        <div class="folder-icon"></div>
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                    <div class="about-project"><article>AQUAREGIA My College Fest Website</article>
+                <p>A webpage for My College Fest to register and participate in college's Events like Sports, Dance, Singing, E-Sports, etc.</p></div>
+            </div>
+        </a>
+        </div>
+        </div>
+        </section>
+
+    </main>
+    <!-- main ends here -->
+
+    <footer>
+        <div class="footercontainer">
+            <div class="two-words"><article>"Learning, Living, and Leveling Up."</article></div>
+            <div class="social-media-container">
+                <div class="getintouch-heading"><article>GetinTouch();</article></div>
+                <div class="logos">
+            <a href="https://instagram.com/its_.me._vinod?igshid=YmMyMTA2MsY=" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer="target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vinodjangid07"target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:infovinodjangid@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+            </div>
+            <div class="footer-bottom">
+                <article>Design & Built by Vinod Jangid <i class="far fa-copyright"></i> twentytwentytwo</article>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer ends here -->
+</body>
+
+<script src="main.js"></script>
+<!-- for aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- tilt js -->
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".language-name"), {
+		max: 25,
+		speed: 100,
+        perspective:1000
+	}); -->
+</script>
+
+</html>
