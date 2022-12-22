@@ -65,7 +65,8 @@ body{
     width: 60px;
     height: 30px;
     background-color: transparent;
-    background-image: url(src/svg/Speaker_Icon.svg);
+   
+    background-image: url(src/svg/Mute_Icon.svg);
     background-size:30%;
     background-repeat: no-repeat;
     background-position: 30px ;
@@ -82,7 +83,7 @@ body{
     content: "";
     height: 20px;
     width: 20px;
-    background: conic-gradient(skyblue,black,skyblue,black,skyblue);
+    background: conic-gradient(black,white,black,white,black);
     background-size: contain;
     border-radius: 50%;
     transition-duration: .3s;
@@ -96,7 +97,7 @@ body{
 
 #switch:checked+#label {
     background-color: transparent;
-    background-image: url(src/svg/Mute_Icon.svg);
+    background-image: url(src/svg/Speaker_Icon.svg);
     background-size:30%;
     background-repeat: no-repeat;
     background-position: 5px ;
@@ -105,8 +106,8 @@ body{
 
 #switch:checked+#label::after {
     transform: translate(28px);
+    background: conic-gradient(skyblue,black,skyblue,black,skyblue);
     
-    background: conic-gradient(black,white,black,white,black);
     box-shadow: 0px 4px 10px rgb(15, 15, 15);
 }
 header{
