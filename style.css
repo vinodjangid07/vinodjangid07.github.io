@@ -963,7 +963,7 @@ transition-duration: 1.4s;
 .blur-class{
     opacity: 1;
    transition-delay: .4s;
-    transition-duration: .3s;
+    transition-duration: .2s;
     
 }
 
@@ -977,6 +977,7 @@ transition-duration: 1.4s;
     justify-content: center;
     align-items: center;
     gap: 70px;
+    box-shadow: -0px 0px 30px rgba(0, 0, 0, 0.563);
 }
 .mobile-navbar-tabs-ul a{
     text-decoration: none;
