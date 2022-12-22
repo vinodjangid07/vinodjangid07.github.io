@@ -10,17 +10,12 @@ window.addEventListener("load", function () {
 
 function playpause() {
   if (document.getElementById('switch').checked == false) {
-    
-    
     audio.pause();
    }
 
  else{
-     
-  audio.play();
-     
-    }
-    
+     audio.play();
+ }
   }
 
 
