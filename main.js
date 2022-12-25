@@ -3,7 +3,6 @@ var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
-  audio.play();
 })
 
 // preloader script ends here.........
@@ -11,17 +10,12 @@ window.addEventListener("load", function () {
 
 function playpause() {
   if (document.getElementById('switch').checked == false) {
-    
-    audio.play();
-    
+    audio.pause();
    }
 
  else{
-     
-  
-     audio.pause();
-    }
-    
+     audio.play();
+ }
   }
 
 
