@@ -3,6 +3,7 @@ var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
+  audio.play();
 })
 
 // preloader script ends here.........
