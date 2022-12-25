@@ -12,14 +12,14 @@ window.addEventListener("load", function () {
 function playpause() {
   if (document.getElementById('switch').checked == false) {
     
+    audio.play();
     
-    audio.pause();
    }
 
  else{
      
-  audio.play();
-     
+  
+     audio.pause();
     }
     
   }
