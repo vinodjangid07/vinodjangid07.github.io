@@ -331,7 +331,8 @@ header{
     font-size: 2rem;
     font-weight: 400;
     padding-top: 30px;
-    color: white;
+    color: #ddd;
+    line-height: 20px;
 }
 .contact-btn-div{
     width: 100%;
@@ -417,7 +418,7 @@ header{
 .about-info p{
     font-size: 2rem;
     font-weight: 400;
-    /* line-height: 35px; */
+    line-height: 25px;
     color: #fff;
 }
 .dp{
