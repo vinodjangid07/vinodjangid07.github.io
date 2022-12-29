@@ -256,11 +256,9 @@ header{
     height: fit-content;
 }
 .landing-page-container{
-    /* background-image: url(pexels-naveen-annam-1578287.png); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: black; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -298,7 +296,6 @@ header{
     width:100%;
     display: flex;
     align-items: flex-start;
-    /* font-family:fira code; */
     background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
     background: linear-gradient(-45deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
     background-clip: text;
@@ -327,17 +324,14 @@ header{
     width:100%;
     display: flex;
     align-items: flex-start;
-    /* font-family: fira code; */
     color: white;
 }
 #info-para{
     width: 50%;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 30px;
     color: white;
-    font-family: fira code;
-    /* mix-blend-mode: difference; */
 }
 .contact-btn-div{
     width: 100%;
@@ -360,6 +354,7 @@ header{
     transition-duration: .3s;
     border: 2px solid white;
 }
+
 .contact-btn:hover{
     background-color:white;
     letter-spacing: 2px;
@@ -412,6 +407,7 @@ header{
     width: 100%;
     display: flex;
     margin-top: 30px;
+    
 }
 .about-info{
     width: 60%;
@@ -420,8 +416,8 @@ header{
 }
 .about-info p{
     font-size: 2rem;
-    font-weight: 500;
-    line-height: 35px;
+    font-weight: 400;
+    /* line-height: 35px; */
     color: #fff;
 }
 .dp{
@@ -429,10 +425,45 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content:center;
+    position: relative;
+    transition-duration: .5s;
 }
 .dp img{
     width: 300px;
-    border-radius: 5px;
+
+}
+.dp::before{
+    content: "";
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+    box-shadow: 2px 2px 0px inset #8000ff,
+                -2px -2px 0px inset #8000ff;
+                transition-duration: .5s;
+
+}
+.dp::after{
+    content: "";
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+    box-shadow: 2px 2px 0px inset #8000ff,
+                -2px -2px 0px inset #8000ff;
+                transition-duration: .5s;
+
+}
+/* hover effect on dp */
+.dp:hover::after{
+    transform: translate(20px,20px);
+    transition-duration: .5s;
+}
+.dp:hover::before{
+    transform: translate(-20px,-20px);
+    transition-duration: .5s;
 }
 /* about section ends
  */
@@ -487,7 +518,7 @@ header{
     font-size: 2rem;
     font-weight: 600;
     font-family: fira code;
-   color: #fff;
+    color: #fff;
 }
 .frontend-dev-section{
     width: 100%;
@@ -545,7 +576,7 @@ header{
     text-align: center;
 }
 /* skills section ends */
-
+/* ######################################################## */
 /* projects section starts */
 .projects-section-container{
     margin-top: 150px;
@@ -666,13 +697,7 @@ header{
     display: flex;
     align-items: center;
 }
-/* .folder-icon{
-    background-image: url(folder.svg);
-    height: 50px;
-    width: 20%;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+
 .about-project{
     height: 70%;
     display: flex;
@@ -694,6 +719,7 @@ header{
     color: #fff;
 }
 /* projects ends */
+
 /* footer starts */
 .footercontainer{
     background-color: rgb(2, 2, 2);
