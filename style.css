@@ -44,6 +44,7 @@ html {
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
     --color-navbarBorder-dark:#20222e;
+    
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -56,11 +57,19 @@ html {
     border-radius: 20px;
 
 }
-
 body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
+    cursor: default;
+    cursor: url('icons8-cursor-64.png');
+    cursor: url('icons8-cursor-64.png'),
+    url('icons8-cursor-64.png');
+    cursor: url('icons8-cursor-64.png'),
+    move;
+        cursor: url('icons8-cursor-64.png')10 12;
 }
+
+
 /* for light mode */
 .light-mode{
     --color-dark-mode:#ece7e1;
@@ -264,7 +273,7 @@ header{
     justify-content: center;
     font-size: 1.5rem;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-family: fira code;
 }
 
@@ -314,6 +323,7 @@ header{
 .main{
     width: 100%;
     height: fit-content;
+    
 }
 .landing-page-container{
     background-size: contain;
