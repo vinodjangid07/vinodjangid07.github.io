@@ -60,7 +60,7 @@ html {
 body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
-    cursor: default;
+    cursor: none;
     cursor: url('cursor.png');
     cursor: url('cursor.png'),
     url('cursor.png');
@@ -96,6 +96,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+     cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
 }
 .fas{
     color: var(--color-white);
@@ -141,7 +147,12 @@ body{
     background-size:50%;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
     border-radius: 50%;
     transition-duration: .5s;
 }
@@ -189,6 +200,12 @@ body{
     cursor: pointer;
     border-radius: 50%;
     transition-duration: .5s;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
 }
 .invertsoundlabel{
    filter: invert(1);
@@ -273,7 +290,12 @@ header{
     justify-content: center;
     font-size: 1.5rem;
     position: relative;
-    /* cursor: pointer; */
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
     font-family: fira code;
 }
 
@@ -496,7 +518,12 @@ header{
     height: 50px;
     width: 200px;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
     font-family: fira code;
     font-weight: 600;
     transition-duration: .3s;
@@ -798,7 +825,12 @@ header{
     border: 0.2rem solid #20222e;
     justify-content: space-between;
     transition-duration: .3s;
-    cursor: pointer;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
     position: relative;
 }
 .language-gradient-class{
@@ -911,6 +943,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 .social-media-container a{
     width: 60px;
@@ -923,6 +956,12 @@ header{
     border-radius: 50%;
     border: 2px solid rgb(78, 78, 78);
     transition-duration: .3s;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
 }
 .getintouch-heading{
     width: 100%;
