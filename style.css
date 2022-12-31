@@ -102,8 +102,10 @@ body{
     cursor: url('click.png'),
     move;
         cursor: url('click.png')10 12;
+        padding: 0px 20px;
 }
 .fas{
+    /* width: 40px; */
     color: var(--color-white);
     font-size: 3rem;
     transition-duration: .4s;
@@ -153,7 +155,6 @@ body{
     cursor: url('click.png'),
     move;
         cursor: url('click.png')10 12;
-    border-radius: 50%;
     transition-duration: .5s;
 }
 
@@ -176,15 +177,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-100px) scale(0);
-    /* display: none; */
+    transform: translate(-130px)scale(0);
     transition-duration: .3s;
 }
 .soundmodeshow{
     transition-delay: .1s;
     transition-duration: .5s;
     display: inline-block;
-    transform:translate(0px) scale(1);
+    transform:translate(0px)scale(1);
+
 }
 #labelforsound {
     position: relative;
@@ -194,11 +195,10 @@ body{
     width: 40px;
     height: 40px;
     background-image: url(src/svg/Mute_Icon.svg);
-    background-size:50%;
+    background-size:60%;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    border-radius: 50%;
     transition-duration: .5s;
     cursor: url('click.png');
     cursor: url('click.png'),
@@ -1294,6 +1294,10 @@ transition-duration: 1.4s;
     .setting-container {
         margin-left: 0px;
     }
+    .dp::before{
+        display: none;
+    }
+    .dp::after{display: none;}
 .project-boxes-div{
     margin-top: 30px;
     width: 100%;
