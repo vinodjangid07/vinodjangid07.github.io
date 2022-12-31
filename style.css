@@ -258,12 +258,13 @@ header{
     width: 80%;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
     justify-content: space-between;
     position:fixed;
     z-index: 999;
     border: 0.2rem solid var(--color-navbarBorder-dark);
     border-radius: 50px;
+    overflow: hidden;
 }
 .navbar-tabs{
     display: flex;
@@ -315,7 +316,7 @@ header{
     font-weight: 100;
 }
 .logo{
-    width: 20%;
+    width: 10%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -323,7 +324,18 @@ header{
     font-weight: 500;
     font-family:Passions Conflict;
     color: var(--color-white);
+    /* overflow: hidden; */
+    background-image: url(src/png/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+    background-position: center;
 }
+.logo:hover{
+    background-position-y: 200px;
+    transition-duration: 1s;
+}
+
 
 .activeThistab{
     color: var(--color-white);
@@ -1057,6 +1069,9 @@ border: none;
         align-items: center;
         justify-content: center;
     }
+    .logo{
+        background-size: cover;
+    }
     
   }
   @media screen and (max-width:1150px) {
@@ -1350,13 +1365,18 @@ transition-duration: 1.4s;
     .two-words article{
         font-size: 2.5rem;
     }
-    .logos a{
+    .logo{
+        width: 20%;
+        background-size: cover;
+        background-position: center;
+    }
+    /* .logos a{
         width: 50px;
         height: 50px;
     }
     .logos i{
         font-size: 2.5rem;
-    }
+    } */
     .project-box{
         padding: 30px;
         height: 250px;
@@ -1385,7 +1405,7 @@ transition-duration: 1.4s;
     .two-words article{
         font-size: 2rem;
     }
-    .logos{
+    /* .logos{
         height: 50px;
     }
     .logos a{
@@ -1394,7 +1414,7 @@ transition-duration: 1.4s;
     }
     .logos i{
         font-size: 2rem;
-    }
+    } */
     .footer-bottom article{
         font-size: 1.3rem;
     }
