@@ -445,8 +445,8 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
-    -webkit-animation: gradien 3s ease infinite;
-    animation: gradien 3s ease infinite;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
 
 }
 @keyframes gradient {
