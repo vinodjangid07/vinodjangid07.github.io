@@ -61,12 +61,12 @@ body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
     cursor: default;
-    cursor: url('icons8-cursor-64.png');
-    cursor: url('icons8-cursor-64.png'),
-    url('icons8-cursor-64.png');
-    cursor: url('icons8-cursor-64.png'),
+    cursor: url('cursor.png');
+    cursor: url('cursor.png'),
+    url('cursor.png');
+    cursor: url('cursor.png'),
     move;
-        cursor: url('icons8-cursor-64.png')10 12;
+        cursor: url('cursor.png')10 12;
 }
 
 
