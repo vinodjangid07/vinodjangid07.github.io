@@ -61,12 +61,12 @@ body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
     cursor: none;
-    cursor: url('cursor.png');
-    cursor: url('cursor.png'),
-    url('cursor.png');
-    cursor: url('cursor.png'),
+    cursor: url('cursorr.png');
+    cursor: url('cursorr.png'),
+    url('cursorr.png');
+    cursor: url('cursorr.png'),
     move;
-        cursor: url('cursor.png')10 12;
+        cursor: url('cursorr.png')10 12;
 }
 
 
