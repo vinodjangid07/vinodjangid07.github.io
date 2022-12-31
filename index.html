@@ -78,7 +78,7 @@
         <section class="landing-page-container" id="home">
             
             <div class="text-content">
-                <p id="hello-friend" data-aos="fade"data-aos-delay="100" data-aos-duration="3000">Namaste(); I'm</p>
+                <p id="hello-friend"data-aos="fade"data-aos-delay="100" data-aos-duration="3000">Namaste(); I'm</p>
                 <span id="name" data-aos="fade"data-aos-delay="500" data-aos-duration="3000">Vinod Jangid.</span>
                 <p id="work" data-aos="fade"data-aos-delay="1000" data-aos-duration="3000">I build things for the web.</p>
                 <p id="info-para" data-aos="fade"data-aos-delay="1500" data-aos-duration="3000">Web Developer with experience of Visual Concept Arts, Fronted Web Designs. I Love fun Web UI, collaboration and making products.<br> 
@@ -89,13 +89,23 @@
                     <a href="mailto:infovinodjangid@gmail.com">
                     <button class="contact-btn" id="contact-btn">LetsTalk();
                     </button></a>
-                    
-                    <div class="togglebuttoncontainer">
-                        
-                        <input type="checkbox" id="switch" onclick="playpause()">
-                        <label for="switch" id="label"></label>
-                  
+                    <div class="setting-container" id="setting-container">
+                        <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
+
+                        <label for="switchforsetting" id="labelforsetting"><i class="fas fa-cog"></i></label>
+
+                      <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+                        <input type="checkbox" id="switchforvisualmode"
+                        onclick="visualmode()">
+                        <label for="switchforvisualmode" id="labelforvisualmode"></label>
+                      </div>
+
+                    <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+                        <input type="checkbox" id="switchforsound" onclick="playpause()">
+                        <label for="switchforsound" id="labelforsound"></label>
                       </div> 
+                      </div><!-- setting div ends -->
+                      
                    </div>
             </div>
            
@@ -103,7 +113,7 @@
         <!-- landing page ends here -->
         <section class="about-section-container" id="about" data-aos="fade-up">
             <div class="about-section">
-                <div class="about-heading"><article>AboutMe();</article><p></p></div>
+                <div class="about-heading"><article class="about-heading-article">AboutMe();</article><p class="aboutHeadingP"></p></div>
                 
                 <div class="info-dp-section">
                     <div class="about-info">
@@ -121,7 +131,7 @@
         
         <section class="skills-section-container" id="skills">
             <div class="skills-section">
-                <div class="skills-heading" data-aos="fade-up"><article>Skills();</article><p></p></div>
+                <div class="skills-heading" data-aos="fade-up"><article class="skills-heading-article">Skills();</article><p class="skillsHeadingP"></p></div>
                 
                 <div class="frontend-dev-section">
 
@@ -129,15 +139,15 @@
                     <div class="language-speak"><article>>_ Languages i speak:</article></div>
                     <div class="languages-section">
 
-                        <div class="language-name"data-aos="fade-up" ><article>HTML</article>
+                        <div class="language-name"data-aos="fade-up" id="html"><article>HTML</article>
                         <p>INTERMEDIATE!</p></div>
-                        <div class="language-name"data-aos="fade-up"><article>CSS</article>
+                        <div class="language-name"data-aos="fade-up" id="css"><article>CSS</article>
                             <p>ADVANCED!</p></div>
-                            <div class="language-name"data-aos="fade-up"><article>BOOTSTRAP</article>
+                            <div class="language-name"data-aos="fade-up"id="bootstrap"><article>BOOTSTRAP</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="language-name"data-aos="fade-up"><article>REACT JS</article>
+                                <div class="language-name"data-aos="fade-up"id="react"><article>REACT JS</article>
                                     <p>BEGINNER!</p></div>
-                                <div class="language-name"data-aos="fade-up"><article>JAVASCRIPT</article>
+                                <div class="language-name"data-aos="fade-up"id="js"><article>JAVASCRIPT</article>
                                     <p>INTERMEDIATE!</p></div>
                                     
 
@@ -150,11 +160,11 @@
                     <div class="enjoy-designing language-speak" data-aos="fade-up"><article>Things i enjoy Designing:</article></div>
                     <div class="tool-section languages-section">
 
-                        <div class="tool-name language-name" data-aos="fade-up"><article>ADOBE PHOTOSHOP</article>
+                        <div class="tool-name language-name" data-aos="fade-up"id="ap"><article>ADOBE PHOTOSHOP</article>
                         <p>ADVANCED!</p></div>
-                            <div class="tool-name language-name" data-aos="fade-up"><article>CANVA</article>
+                            <div class="tool-name language-name" data-aos="fade-up"id="canva"><article>CANVA</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="tool-name language-name" data-aos="fade-up"><article>ADOBE AI</article>
+                                <div class="tool-name language-name" data-aos="fade-up"id="ai"><article>ADOBE AI</article>
                                     <p>BEGINNER!</p></div>
                                
                                     
@@ -168,9 +178,9 @@
                     <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Other Languages i Know:</article></div>
                     <div class="programming-section languages-section">
 
-                        <div class="language-name language-name" data-aos="fade-up"><article>C</article>
+                        <div class="language-name language-name" data-aos="fade-up" id="c"><article>C</article>
                         <p>INTERMEDIATE!</p></div>
-                        <div class="language-name language-name" data-aos="fade-up"><article>C++</article>
+                        <div class="language-name language-name" data-aos="fade-up"id="cpp"><article>C++</article>
                             <p>BEGINNER!</p></div>  
                     </div>
 
@@ -180,10 +190,10 @@
         <!-- skills section ends -->
         <section class="projects-section-container" id="projects">
             <div class="projects-section-div">
-                <div class="projects-heading"><article>Projects();</article><p></p></div>
+                <div class="projects-heading"><article class="projects-heading-article">Projects();</article><p class="projectsHeadingP"></p></div>
                 <div class="project-boxes-div">
 
-                    <a href="https://vinodjangid07.github.io/AXOCEAN/"><div class="project-box project-box1">
+                    <a href="https://vinodjangid07.github.io/AXOCEAN/"><div class="project-box project-box1" id="project-box1">
                     <div class="icons-for-projects">
                         <div class="folder-icon"></div>
                         <i class="fas fa-paperclip"></i>
@@ -194,7 +204,7 @@
                 </div>
                 </div></a>
 
-                <a href="https://vinodjangid07.github.io/Aquaregia/"><div class="project-box project-box2">
+                <a href="https://vinodjangid07.github.io/Aquaregia/"><div class="project-box project-box2" id="project-box2">
                     <div class="icons-for-projects">
                         <div class="folder-icon"></div>
                         <i class="fas fa-paperclip"></i>

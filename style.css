@@ -35,11 +35,15 @@ html {
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     cursor:default;
     --color-white: #fff;
-    --color-gray: #c4c4c4;
     --color-black: #000;
+    --color-dark-mode:#0a0a10;
+    --color-light-mode:#ece7e1;
+    --color-ddd-color: #ddd;
+    --color-gray: #c4c4c4;
     --color-purple: #8000ff;
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
+    --color-navbarBorder-dark:#20222e;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -54,70 +58,143 @@ html {
 }
 
 body{
-    /* background-color:#ece7e1; */
-    background-color: #0a0a10;
+    background-color: var(--color-dark-mode);
     overflow-x: hidden;
 }
+/* for light mode */
+.light-mode{
+    --color-dark-mode:#ece7e1;
+    --color-black: #fff;
+    --color-white: #000;
+    --color-ddd-color: rgb(31, 31, 31);
+    --color-navbarBorder-dark:#c5cae1;
+}
+.setting-container{
+    width: 60px;
+    height: 50px;
+    margin-left:50px;
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+    transition-duration: .5s;
+    gap: 30px;
+    padding: 20px;
+   
+}
+#labelforsetting{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fas{
+    color: var(--color-white);
+    font-size: 3rem;
+    transition-duration: .4s;
+    
+   
+}
+.settingactivate{
+    transform-origin: left;
+    width: 200px;
+    transition-duration: .5s;
 
-.togglebuttoncontainer {
-    margin-left: 50px;
+}
+
+.visualmodetogglebuttoncontainer{
     width: fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform:translate(-50px)scale(0);
+    transition-duration: .3s;
+}
+.visualmodeshow{
+    transition-duration: .3s;
+    transform: translate(0px)scale(1);
+}
+#switchforsetting{
+    display: none;
+}
+#switchforsetting:checked+#labelforsetting i{ 
+    transform: rotate(360deg);
+    transition-duration: .4s;
+
 }
 
-#label {
+#labelforvisualmode {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(src/png/crescent-moon\ \(1\).png);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition-duration: .5s;
+}
+
+#switchforvisualmode{
+    display: none;
+}
+#switchforvisualmode:checked+#labelforvisualmode { 
+    transform: rotate(360deg);
+    transition-duration: .5s;
+    background-image: url(src/png/sun.png);
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+/* for sound */
+.soundtogglebuttoncontainer{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-100px) scale(0);
+    /* display: none; */
+    transition-duration: .3s;
+}
+.soundmodeshow{
+    transition-delay: .1s;
+    transition-duration: .5s;
+    display: inline-block;
+    transform:translate(0px) scale(1);
+}
+#labelforsound {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 30px;
-    background-color: transparent;
-   
+    width: 40px;
+    height: 40px;
     background-image: url(src/svg/Mute_Icon.svg);
-    background-size:30%;
+    background-size:50%;
     background-repeat: no-repeat;
-    background-position: 30px ;
+    background-position: center;
     cursor: pointer;
-    border-radius: 50px;
-    transition-duration: .5s;
-    border: 1px solid rgb(213, 96, 252);
-}
-
-#label::after {
-    position: absolute;
-    left: 5px;
-    align-self: center;
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: conic-gradient(black,white,black,white,black);
-    background-size: contain;
     border-radius: 50%;
-    transition-duration: .3s;
-    box-shadow: 0px 4px 10px rgb(10, 10, 10);
-    /* border: 1px solid black; */
+    transition-duration: .5s;
 }
-
-#switch {
+.invertsoundlabel{
+   filter: invert(1);
+}
+#switchforsound{
     display: none;
 }
 
-#switch:checked+#label { 
-    background-color: transparent;
+#switchforsound:checked+#labelforsound { 
+    transition-duration: .5s;
     background-image: url(src/svg/Speaker_Icon.svg);
-    background-size:30%;
+    background-size:50%;
     background-repeat: no-repeat;
-    background-position: 8px ;
-
-}
-
-#switch:checked+#label::after {
-    transform: translate(28px) rotate(90deg);
-    background: conic-gradient(skyblue,black,skyblue,black,skyblue);
+    background-position: center ;
+   
 }
 header{
     width: 100%;
@@ -159,7 +236,7 @@ header{
     justify-content: space-between;
     position:fixed;
     z-index: 999;
-    border: 0.2rem solid #20222e;
+    border: 0.2rem solid var(--color-navbarBorder-dark);
     border-radius: 50px;
 }
 .navbar-tabs{
@@ -176,7 +253,7 @@ header{
     align-items: center;
     justify-content:flex-end;
     gap: 80px;
-    color: white;
+    color: var(--color-white);
 }
 .navbar-tabs-ul li{
     width: fit-content;
@@ -186,26 +263,14 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: 600;
     position: relative;
     cursor: pointer;
     font-family: fira code;
 }
-.navbar-tabs-ul li:hover{
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-  
-}
+
 .navbar-tabs-ul li:hover:before{
-    content: "O";
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    content: "";
+    background-color: var(--color-white);
     position: absolute;
     height: 10px;
     width: 10px;
@@ -215,7 +280,8 @@ header{
 }
 .navbar-tabs-ul a{
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
+    font-weight: 100;
 }
 .logo{
     width: 20%;
@@ -225,21 +291,15 @@ header{
     font-size: 6rem;
     font-weight: 500;
     font-family:Passions Conflict;
-    color: #fff;
+    color: var(--color-white);
 }
+
 .activeThistab{
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
 }
 .activeThistab:before{
     content: "";
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    background-color: var(--color-white);
     position: absolute;
     height: 10px;
     width: 10px;
@@ -282,15 +342,88 @@ header{
     height: 100px;
     display: flex;
     align-items: flex-end;
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
     font-family: fira code;
 }
+#hello-friend:hover{
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;-webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-30 8:50:8
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+  #name:hover{
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+  
 #name{
+
+
     font-size: 8rem;
     font-weight:700;
     width:100%;
@@ -302,8 +435,8 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
-    -webkit-animation: gradient 3s ease infinite;
-    animation: gradient 3s ease infinite;
+    -webkit-animation: gradien 3s ease infinite;
+    animation: gradien 3s ease infinite;
 
 }
 @keyframes gradient {
@@ -318,20 +451,24 @@ header{
         background-position: 0 50%;
     }
 }
+#work:hover{
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
 #work{
     font-size: 8rem;
     font-weight:700;
     width:100%;
     display: flex;
     align-items: flex-start;
-    color: white;
+    color: var(--color-white);
 }
 #info-para{
     width: 50%;
     font-size: 2rem;
     font-weight: 400;
     padding-top: 30px;
-    color: #ddd;
+    color: var(--color-ddd-color);
     line-height: 20px;
 }
 .contact-btn-div{
@@ -345,7 +482,7 @@ header{
 .contact-btn{
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--color-white);
     height: 50px;
     width: 200px;
     font-size: 1.5rem;
@@ -353,14 +490,14 @@ header{
     font-family: fira code;
     font-weight: 600;
     transition-duration: .3s;
-    border: 2px solid white;
+    border: 2px solid var(--color-white);
 }
 
 .contact-btn:hover{
-    background-color:white;
+    background-color: var(--color-white);
     letter-spacing: 2px;
     transition-duration: .3s;
-    color: black;
+    color: var(--color-black);
 }
 /* landing page code ends here */
 
@@ -386,7 +523,7 @@ header{
     align-items: center;
     gap: 10px;
 }
-.about-heading article{
+.about-heading-article{
     font-size:3rem;
     font-family: fira code;
     font-weight: 600;
@@ -397,13 +534,14 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.about-heading p{
+.aboutHeadingP{
     width: 300px;
     height: 1px;
     background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
     background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
     background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
 }
+
 .info-dp-section{
     width: 100%;
     display: flex;
@@ -419,7 +557,7 @@ header{
     font-size: 2rem;
     font-weight: 400;
     line-height: 25px;
-    color: #fff;
+    color: var(--color-white);
 }
 .dp{
     width: 40%;
@@ -489,7 +627,7 @@ header{
     align-items: center;
     gap: 10px;
 }
-.skills-heading article{
+.skills-heading-article{
     font-size:3rem;
     font-family: fira code;
     font-weight: 600;
@@ -500,7 +638,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.skills-heading p{
+.skillsHeadingP{
     width: 300px;
     height: 1px;
     background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
@@ -508,6 +646,7 @@ header{
     background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
 
 }
+
 .language-speak{
     width: 100%;
     display: flex;
@@ -519,7 +658,7 @@ header{
     font-size: 2rem;
     font-weight: 600;
     font-family: fira code;
-    color: #fff;
+    color: var(--color-white);
 }
 .frontend-dev-section{
     width: 100%;
@@ -563,11 +702,16 @@ header{
     border-radius: 7rem;
     transform-style: preserve-3d;
 }
+.language-gradient-class{
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(137, 145, 195, 0.5)),to(rgba(15,15,24,.5)));
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgb(231, 231, 231),rgb(207, 207, 208));
+}
 .language-name article{
     font-size: 2.5rem;
     font-weight: 700;
     font-family: fira code;
-    color: #fff;
+    color: var(--color-white);
     transform: translateZ(50px);
 }
 .language-name p{
@@ -576,6 +720,7 @@ header{
     color: rgb(101, 100, 100);
     text-align: center;
 }
+
 /* skills section ends */
 /* ######################################################## */
 /* projects section starts */
@@ -599,7 +744,7 @@ header{
     align-items: center;
     gap: 10px;
 }
-.projects-heading article{
+.projects-heading-article{
     font-size:3rem;
     font-family: fira code;
     font-weight: 600;
@@ -610,7 +755,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.projects-heading p{
+.projectsHeadingP{
     width: 300px;
     height: 1px;
     background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
@@ -645,6 +790,12 @@ header{
     transition-duration: .3s;
     cursor: pointer;
     position: relative;
+}
+.language-gradient-class{
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(137, 145, 195, 0.5)),to(rgba(15,15,24,.5)));
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgb(231, 231, 231),rgb(207, 207, 208));
+    border: 0.2rem solid #b2b2b3;
 }
 .project-box1::before{
     position: absolute;
@@ -708,7 +859,7 @@ header{
 .project-box article{
     font-size: 2rem;
     font-weight: 700;
-    color:#fff;
+    color: var(--color-white);
 }
 .project-box p{
     font-size: 1.5rem;
@@ -717,10 +868,16 @@ header{
 }
 .icons-for-projects .fas{
     font-size: 3rem;
-    color: #fff;
+    color: var(--color-white);
 }
-/* projects ends */
 
+/* projects ends */
+/* for light mode  */
+.heading-article-light{
+    background-image: -webkit-gradient(linear,left top,right top,from(#0f7878),to(#f09bb9));
+    background-image: -webkit-linear-gradient(left,#0f7878,#f09bb9);
+    background-image: linear-gradient(90deg,#0f7878,#f09bb9);
+}
 /* footer starts */
 .footercontainer{
     background-color: rgb(2, 2, 2);
@@ -819,6 +976,9 @@ border: none;
 .hamburger{
     display: none;
 }
+.tonechange{
+    color: black;
+}
 /* responsive code below*/
 @media screen and (max-width:1920px) {
     html {
@@ -905,15 +1065,12 @@ border: none;
 #burger-bar1{
     width: 60%;
     height:3px;
-    background-color:white;
-
     border-radius: 0px;
     transition-duration: .3s;
 }
 #burger-bar2{
     width: 100%;
     height:3px;
-    background-color:#fff;
     border-radius: 0px;
     transition-duration: .3s;
 
@@ -922,22 +1079,24 @@ border: none;
 {
     width: 60%;
     height:3px;
-    background-color: #fff;
-
     border-radius: 0px;
     transition-duration: .3s;
 
 }
+.burger-bar{
+    background-color: var(--color-white);
+}
+
 .hamburger-animation1{
     transform: rotate(45deg) scaleX(1.7);
     transition-duration: .3s;
     transform-origin: left;
-    /* background-color: white; */
+    background-color: var(--color-white);
 
 } 
 .hamburger-animation2{
    transform: scaleX(0);
-    /* background-color: white; */
+    background-color: var(--color-white);
 
     
 }
@@ -945,7 +1104,7 @@ border: none;
     transform: rotateZ(-45deg) scaleX(1.7);
     transform-origin: left;
     transition-duration: .3s;
-    /* background-color: white; */
+    background-color: var(--color-white);
 
 
 }
@@ -996,7 +1155,7 @@ transition-duration: 1.4s;
 
 .mobile-navbar-tabs-ul{
     /* animation: dropdownlist .3s linear; */
-    background-color: #0a0a10;
+    background-color: var(--color-dark-mode);
     width: 70%;
     height: 100%;
     display: flex;
@@ -1019,9 +1178,9 @@ transition-duration: 1.4s;
     position: relative;
     cursor: pointer;
     font-family: fira code;
-    color: #fff;
+    color: var(--color-white);
     height: 30px;
-    width: 100px;
+    width: fit-content;
 }
 .info-dp-section{
     width: 100%;
@@ -1042,14 +1201,18 @@ transition-duration: 1.4s;
     justify-content:center;
 }
 .activeThismobiletab{
-    /* border-bottom: 2px solid white;
-    border-radius: 40px; */
-    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
-    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
-    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
+    
+}
+.activeThismobiletab:before{
+    content: "";
+    background-color: var(--color-white);
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: -20px;
+    border-radius: 50%;
+
 }
   }
   
@@ -1077,9 +1240,9 @@ transition-duration: 1.4s;
         flex-direction: column-reverse;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 30px;
+        gap: 20px;
     }
-    .togglebuttoncontainer {
+    .setting-container {
         margin-left: 0px;
     }
 .project-boxes-div{
