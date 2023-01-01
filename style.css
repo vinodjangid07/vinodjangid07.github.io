@@ -318,21 +318,57 @@ header{
 .logo{
     width: 10%;
     height: 100%;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.logo-top{
+    width: 100%;
+    height:84%;
     display: flex;
     align-items: center;
-    font-size: 6rem;
-    font-weight: 500;
-    font-family:Passions Conflict;
-    color: var(--color-white);
-    /* overflow: hidden; */
-    background-image: url(src/png/logo.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    transition-duration: 1s;
-    background-position: center;
+    justify-content: center;
+    animation: headshake 6s linear infinite;
+    transform-origin: bottom;
+}
+@keyframes headshake {
+    0%{
+        transform: rotate(-8deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(8deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-8deg);
+    }
+    
+}
+
+.logo-top img{
+    height: 100%;
+}
+.logo-bottom{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-bottom img{
+    height: 100%;
+    
 }
 .logo:hover{
-    background-position-y: 200px;
+    transform: translateY(200px);
     transition-duration: 1s;
 }
 
