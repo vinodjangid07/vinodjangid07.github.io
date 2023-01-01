@@ -1429,6 +1429,9 @@ transition-duration: 1.4s;
         transform: scale(0);
         transition-duration: .3s;
     }
+    .logo{
+        width: 18%;
+    }
     .logo:hover{
     transform: translateY(200px);
     transition-duration: 1s;
