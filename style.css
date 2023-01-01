@@ -922,7 +922,7 @@ header{
 }
 .project-box p{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(101, 100, 100);
 }
 .icons-for-projects .fas{
@@ -936,6 +936,44 @@ header{
     background-image: -webkit-gradient(linear,left top,right top,from(#0f7878),to(#f09bb9));
     background-image: -webkit-linear-gradient(left,#0f7878,#f09bb9);
     background-image: linear-gradient(90deg,#0f7878,#f09bb9);
+}
+
+#backtotopbutton{
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+    width:3rem;
+    height:9rem;
+    z-index: 101;
+    text-align: center;
+    transition: all .4s;
+    background-color: transparent;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
+}
+#backtotopbutton article{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-weight: 400;
+    width: 200px;
+    transform: rotate(90deg);
+     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+#backtotopbutton:hover{
+    transform: translate(0px,-20px);
+    text-decoration: line-through;
 }
 /* footer starts */
 .footercontainer{

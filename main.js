@@ -112,3 +112,26 @@ navLi.forEach( li => {
 })
 })
 console.log('%c Designed and Developed by Vinod Jangid ', 'background: #000; color: green; padding:20px;');
+
+
+
+let mybutton = document.getElementById("backtotopbutton");
+window.onscroll = function(){
+  scrollFunction()
+};
+
+function scrollFunction(){
+  if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)
+  {
+    mybutton.style.display = "block";
+  }
+   else{
+      mybutton.style.display = "none";
+     
+      }
+}
+
+function scrolltoTopfunction(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
