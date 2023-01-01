@@ -54,7 +54,7 @@ html {
 }
 ::-webkit-scrollbar-thumb{
    background-color: #8000ff;
-   border-radius: 20px;
+   /* border-radius: 20px; */
 
 }
 body{
@@ -382,7 +382,7 @@ header{
 #hello-friend{
     font-size: 3.5rem;
     font-weight: 600;
-    width: 100%;
+    width:fit-content;
     height: 100px;
     display: flex;
     align-items: flex-end;
@@ -455,7 +455,7 @@ header{
 #name{
     font-size: 8rem;
     font-weight:700;
-    width:100%;
+    width:fit-content;
     display: flex;
     align-items: flex-start;
     background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--color-light-purple),var(--color-light-blue),var(--color-light-purple));
@@ -487,7 +487,7 @@ header{
 #work{
     font-size: 8rem;
     font-weight:700;
-    width:100%;
+    width:fit-content;
     display: flex;
     align-items: flex-start;
     color: var(--color-white);
@@ -959,8 +959,9 @@ header{
     url('click.png');
     cursor: url('click.png'),
     move;
-        cursor: url('click.png')10 12;
-        display: none;
+    cursor: url('click.png')10 12;
+    display: none;
+    
 }
 #backtotopbutton article{
     font-size: 1.5rem;
@@ -969,6 +970,7 @@ header{
     width: 200px;
     transform: rotate(90deg);
      font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+     mix-blend-mode: difference;
 }
 
 
