@@ -135,3 +135,12 @@ function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// document.addEventListener("contextmenu", function (e){
+//   e.preventDefault();
+// }, false);
+
+document.addEventListener("contextmenu", function(e){
+  if (e.target.nodeName === "IMG") {
+      e.preventDefault();
+  }
+}, false);

@@ -1151,8 +1151,9 @@ border: none;
         align-items: center;
         justify-content: center;
     }
-    .logo{
-        background-size: cover;
+    .logo:hover{
+        transform: translateY(200px);
+        transition-duration: 1s;
     }
     
   }
@@ -1428,6 +1429,10 @@ transition-duration: 1.4s;
         transform: scale(0);
         transition-duration: .3s;
     }
+    .logo:hover{
+    transform: translateY(200px);
+    transition-duration: 1s;
+}
   }
   
   @media screen and (max-width:500px) {
@@ -1447,18 +1452,10 @@ transition-duration: 1.4s;
     .two-words article{
         font-size: 2.5rem;
     }
-    .logo{
-        width: 20%;
-        background-size: cover;
-        background-position: center;
+    .logo:hover{
+        transform: translateY(200px);
+        transition-duration: 1s;
     }
-    /* .logos a{
-        width: 50px;
-        height: 50px;
-    }
-    .logos i{
-        font-size: 2.5rem;
-    } */
     .project-box{
         padding: 30px;
         height: 250px;
