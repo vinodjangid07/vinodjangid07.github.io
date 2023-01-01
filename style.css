@@ -396,11 +396,14 @@ header{
    align-items: center;
    justify-content: center;
    background-color: white;
+   overflow: hidden;
+
+
 }
 .pupil{
-    width:4px;
-    height:4px;
-    background: #000;
+    width:5px;
+    height:5px;
+    background: rgb(44, 28, 28);
     border-radius: 50%;
 }
 /* .eye:after { 
