@@ -939,7 +939,7 @@ header{
 }
 
 #backtotopbutton{
-    display: none;
+    
     position: fixed;
     right: 10px;
     bottom: 0px;
@@ -960,6 +960,7 @@ header{
     cursor: url('click.png'),
     move;
         cursor: url('click.png')10 12;
+        display: none;
 }
 #backtotopbutton article{
     font-size: 1.5rem;
