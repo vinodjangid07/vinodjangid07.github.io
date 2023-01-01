@@ -385,12 +385,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 7px;
     z-index: 1;
 }
 .eye{
-   width: 6px;
-   height: 6px;
+   width: 5px;
+   height: 5px;
    border-radius: 50%;
    position: relative;
    background-color: white;
