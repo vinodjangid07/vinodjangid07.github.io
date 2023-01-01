@@ -1,3 +1,16 @@
+/* 
+██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
+██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
+╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
+░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
+░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
+░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
+░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
+░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
+░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
+██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
+╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +18,20 @@
 }
 
 *::selection {
-    background-color: transparent;
+    background-color: #8000ff;
 }
 
 *::-moz-selection {
-    background: transparent;
+    background: #8000ff;
 }
  
-* {
+/* * {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 
-}
+} */
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -324,6 +337,10 @@ header{
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .logo-top{
     width: 100%;
@@ -331,7 +348,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: headshake 6s linear infinite;
+    animation: headshake 10s linear infinite;
     transform-origin: bottom;
 }
 @keyframes headshake {
