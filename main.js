@@ -163,8 +163,8 @@ let pupilsArr = Array.from(pupils);
 console.log(pupils);
 
 
-let pupilStartPoint = 0.5;
-let pupilRange = 2.2;
+let pupilStartPoint = -0.2;
+let pupilRange = 3;
 
 
 

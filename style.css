@@ -386,11 +386,11 @@ header{
     align-items: center;
     justify-content: center;
     gap: 4px;
-    z-index: 3;
+    z-index: 1;
 }
 .eye{
-   width: 7.5px;
-   height: 3.5px;
+   width: 8px;
+   height: 8px;
    border-radius: 50%;
    display: flex;
    align-items: center;
@@ -403,7 +403,7 @@ header{
 .pupil{
     width:3px;
     height:3px;
-    background: rgb(44, 28, 28);
+    background: rgb(36, 16, 16);
     border-radius: 50%;
 }
 /* .eye:after { 
