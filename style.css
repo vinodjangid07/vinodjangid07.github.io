@@ -390,7 +390,7 @@ header{
 }
 .eye{
    width: 8px;
-   height: 7px;
+   height: 8px;
    border-radius: 50%;
    display: flex;
    align-items: center;
@@ -401,8 +401,8 @@ header{
 
 }
 .pupil{
-    width:5px;
-    height:5px;
+    width:3px;
+    height:3px;
     background: rgb(44, 28, 28);
     border-radius: 50%;
 }

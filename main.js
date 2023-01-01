@@ -162,8 +162,10 @@ let pupils = document.getElementsByClassName('pupil');
 let pupilsArr = Array.from(pupils);
 console.log(pupils);
 
-let pupilStartPoint = -1;
-let pupilRange = 3.5;
+
+let pupilStartPoint = 0;
+let pupilRange = 2;
+
 
 
 // mouse x position
