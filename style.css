@@ -18,20 +18,20 @@
 }
 
 *::selection {
-    background-color: #8000ff;
+    background-color: transparent;
 }
 
 *::-moz-selection {
-    background: #8000ff;
+    background: transparent;
 }
  
-/* * {
+* {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 
-} */
+}
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -729,7 +729,7 @@ header{
 }
 .contact-btn:hover{
     letter-spacing: 2px;
-    transition-duration: .3s;
+    transition-duration: .4s;
     color: var(--color-black);
 }
 /* landing page code ends here */
