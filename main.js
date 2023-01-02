@@ -166,9 +166,6 @@ console.log(pupils);
 let pupilStartPoint = -1;
 let pupilRange = 3;
 
-
-
-// mouse x position
 let mouseXStartPoint = 0;
 let mouseXEndPoint = window.innerWidth;
 let currentXPosition = 0;
