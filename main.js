@@ -163,9 +163,8 @@ let pupilsArr = Array.from(pupils);
 console.log(pupils);
 
 
-let pupilStartPoint = -0.2;
-let pupilXRange = 3;
-let pupilYRange = 2.5;
+let pupilStartPoint = -1;
+let pupilRange = 3;
 
 
 
@@ -190,8 +189,8 @@ const mouseMove = (event) => {
     currentYPosition = event.clientY;
     fracYValue = currentYPosition / mouseYEndPoint;
     
-    let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilXRange);
-    let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilYRange);
+    let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilRange);
+    let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilRange);
 
     pupilsArr.forEach((curPupil) => {
         curPupil.style.transform= `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
