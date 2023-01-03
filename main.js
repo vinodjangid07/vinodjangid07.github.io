@@ -165,7 +165,7 @@ console.log(pupils);
 
 let pupilStartPoint = -0.2;
 let pupilXRange = 3;
-let pupilYRange = 2.5;
+let pupilYRange = 2;
 
 
 
