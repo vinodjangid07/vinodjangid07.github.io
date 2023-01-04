@@ -704,29 +704,38 @@ header{
     transform: scaleX(0);
     transition-duration: .3s;
     transform-origin: left;
+    transition-delay: .2s;
 }
 .contact-btn::after{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--color-white);
-    left: 0;
-    top: 0;
-    z-index: -2;
-    transform: scaleX(0);
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    left:0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(0);
     transition-duration: .3s;
-    transform-origin: right;
 }
+
+
 .contact-btn:hover::before{
-    transform: scaleX(.5);
+    transform: scaleX(1);
     transition-duration: .3s;
+    transition-delay: 0;
+   
 }
 .contact-btn:hover::after{
-
-    transform: scaleX(.5);
+    opacity: 1;
+    transform: translate(10px,10px);
     transition-duration: .3s;
+     transition-delay: .4s;
 }
+
+
 .contact-btn:hover{
     letter-spacing: 2px;
     transition-duration: .4s;
@@ -802,7 +811,6 @@ header{
 }
 .dp img{
     width: 300px;
-
 }
 .dp::before{
     content: "";
@@ -812,7 +820,7 @@ header{
     position: absolute;
     z-index: -2;
     box-shadow: 2px 2px 0px inset #8000ff,
-                -2px -2px 0px inset #8000ff;
+                -2px -2px 0px inset transparent;
                 transition-duration: .5s;
 
 }
@@ -823,7 +831,7 @@ header{
     width: 300px;
     position: absolute;
     z-index: -2;
-    box-shadow: 2px 2px 0px inset #8000ff,
+    box-shadow: 2px 2px 0px inset transparent,
                 -2px -2px 0px inset #8000ff;
                 transition-duration: .5s;
 
