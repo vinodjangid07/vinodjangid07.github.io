@@ -712,8 +712,6 @@ header{
 .contact-btn:hover::before{
     transform: scaleX(1);
     transition-duration: .3s;
- 
-    
 }
 
 .contact-btn:hover{
@@ -1213,6 +1211,8 @@ header{
     move;
         cursor: url('click.png')10 12;
         position: relative;
+        box-shadow: 0px 0px 0px #8000ff inset;
+        transition-duration: .3s;
 }
 .getintouch-heading{
     width: 100%;
@@ -1249,9 +1249,10 @@ header{
     color: white;
 }
 .social-media-container a:hover{
-transform: translate(-2px ,-5px);
-transition-duration: .3s;
-/* background-color: #8000ff; */
+    box-shadow: 0px 0px 50px 100px #8000ff inset;
+/* transform: translate(-2px ,-5px); */
+transition-duration: 1s;
+
 border: none;
 }
 .social-media-container a::before{
@@ -1263,6 +1264,7 @@ border: none;
     border-radius: 50%;
     transform: scale(0);
     background-color: #8000ff;
+    background-color: transparent;
     transition-duration: .3s;
     z-index: -1;
 }
