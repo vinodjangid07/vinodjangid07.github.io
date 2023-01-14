@@ -676,7 +676,7 @@ header{
 }
 .contact-btn{
     border: none;
-    background-color: transparent;
+    background-color:transparent;
     color: var(--color-white);
     height: 50px;
     width: 200px;
@@ -692,50 +692,29 @@ header{
     transition-duration: .3s;
     border: 2px solid var(--color-white);
     position: relative;
+    border-radius: 50px;
 }
 .contact-btn::before{
     content: "";
     position: absolute;
-    width: 100%;
+    width:100%;
     height: 100%;
-    background-color: var(--color-white);
     left: 0;
     top: 0;
     z-index: -1;
+    transition-duration: .3s;
+    background-color: var(--color-white);
     transform: scaleX(0);
-    transition-duration: .3s;
-    transform-origin: left;
-    transition-delay: .2s;
-}
-.contact-btn::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: 2px solid var(--color-white);
-    left:0px;
-    top: 0px;
-    z-index: -1;
-    opacity: 0;
-    transform: translate(0);
-    transition-duration: .3s;
-}
+    border-radius: 50px;
 
+}
 
 .contact-btn:hover::before{
     transform: scaleX(1);
     transition-duration: .3s;
-    transition-delay: 0;
-   
+ 
+    
 }
-.contact-btn:hover::after{
-    opacity: 1;
-    transform: translate(10px,10px);
-    transition-duration: .3s;
-     transition-delay: .4s;
-}
-
 
 .contact-btn:hover{
     letter-spacing: 2px;
@@ -1464,7 +1443,7 @@ border: none;
   /* display: none; */
   display: flex;
 transform: translate(1000px);
-transition-duration: 1.4s;
+transition-duration: 1.6s;
  
 }
 .show-toggle-menu{
@@ -1504,7 +1483,7 @@ transition-duration: 1.4s;
     justify-content: center;
     align-items: center;
     gap: 70px;
-    box-shadow: -0px 0px 30px rgba(0, 0, 0, 0.563);
+    box-shadow: -0px 0px 30px rgba(0, 0, 0, 0.176);
 }
 .mobile-navbar-tabs-ul a{
     text-decoration: none;
