@@ -586,7 +586,11 @@ header{
     display: flex;
     align-items: flex-start;
     color: var(--color-white);
+    flex-wrap: wrap;
     
+}
+#work div{
+    display: flex;
 }
 .jello:hover{
     background-clip: text;
@@ -719,6 +723,8 @@ header{
     transition-duration: .4s;
     color: var(--color-black);
 }
+
+
 /* landing page code ends here */
 
 /* about section starts from here */
