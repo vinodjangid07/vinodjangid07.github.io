@@ -158,6 +158,11 @@ document.addEventListener("contextmenu", function(e){
       e.preventDefault();
   }
 }, false);
+
+
+
+
+
 let pupils = document.getElementsByClassName('pupil');
 let pupilsArr = Array.from(pupils);
 console.log(pupils);
