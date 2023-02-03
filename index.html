@@ -23,11 +23,11 @@ Enjoy your job. :)
 
 
 -->
-
+<!-- , user-scalable=no -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000">
     <meta name="description" content="Vinod Jangid | Portfolio, visit and know about me & my projects/designs." />
     <meta name="keywords" content="Vinod Jangid, vinod jangid portfolio" />
@@ -66,7 +66,7 @@ Enjoy your job. :)
         
          
         <div class="navbar" id="navbar">
-            <div class="logo">
+            <div class="logo" tabindex="0" aria-label="vinod jangid logo">
 
                 <div class="logo-top">
                     <img src="src/png/logo-headwithouteyes.png" alt="">
@@ -80,13 +80,13 @@ Enjoy your job. :)
             </div>
             <div class="navbar-tabs" id="navbar-tabs">
                 <ul class="navbar-tabs-ul">
-                    <a href="#home">
+                    <a href="#home" tabindex="0" aria-label="Home menu button">
                         <li class="home activeThistab" class="navbar-tabs-li "data-aos="fade-down" data-aos-delay="100">&#60;/Home&#62;</li></a>
-                    <a href="#about">
+                    <a href="#about"aria-label="about menu button">
                     <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">&#60;/AboutMe&#62;</li></a>
-                    <a href="#skills">
+                    <a href="#skills"aria-label="skills menu button">
                     <li class="skills" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="500">&#60;/Skills&#62;</li></a>
-                    <a href="#projects">
+                    <a href="#projects"aria-label="projects menu button">
                     <li class="projects" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="700">&#60;/Projects&#62;</li></a>
                     
                 </ul>
@@ -101,7 +101,7 @@ Enjoy your job. :)
         <!-- hamburger -->
         <div class="hamburger" id="hamburger" data-aos="fade">
             <div class="hamburgerbase">
-            <button id="hamburger-button" onclick="hamburgerMenu()">
+            <button id="hamburger-button" onclick="hamburgerMenu()"  tabindex="0" aria-label="Menu Button">
                 <span class="burger-bar" id="burger-bar1"></span>
                 <span class="burger-bar" id="burger-bar2"></span>
                 <span class="burger-bar" id="burger-bar3"></span></button>
@@ -111,13 +111,13 @@ Enjoy your job. :)
         <div class="mobiletogglemenu" id="mobiletogglemenu">
             <div class="emptyarea" id="emptyarea"></div>
             <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-                <a href="#home">
+                <a href="#home" tabindex="0" aria-label="Home menu button">
                     <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">&#60;/Home&#62;</li></a>
-                <a href="#about">
+                <a href="#about" tabindex="0" aria-label="about menu button">
                 <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">&#60;/AboutMe&#62;</li></a>
-                <a href="#skills">
+                <a href="#skills" tabindex="0" aria-label="skills menu button">
                 <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"onclick="hidemenubyli()">&#60;/Skills&#62;</li></a>
-                <a href="#projects">
+                <a href="#projects" tabindex="0" aria-label="projects menu button">
                 <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">&#60;/Projects&#62;</li></a>
                 
             </ul>
@@ -137,23 +137,23 @@ Enjoy your job. :)
                 <div class="contact-btn-div"data-aos="fade-up"
                 data-aos-delay="800">
                 
-                    <a href="mailto:infovinodjangid@gmail.com">
-                    <button class="contact-btn" id="contact-btn">LetsTalk();
+                    <a href="mailto:infovinodjangid@gmail.com" tabindex="-1">
+                    <button class="contact-btn" id="contact-btn" tabindex="0" aria-label="Chat with Vinod">LetsTalk();
                     </button></a>
                     <div class="setting-container" id="setting-container">
                         <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
 
-                        <label for="switchforsetting" id="labelforsetting"><i class="fas fa-cog"></i></label>
+                        <label for="switchforsetting" id="labelforsetting"tabindex="0" aria-label="settings for sound and appearance"><i class="fas fa-cog"></i></label>
 
                       <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
                         <input type="checkbox" id="switchforvisualmode"
                         onclick="visualmode()">
-                        <label for="switchforvisualmode" id="labelforvisualmode"></label>
+                        <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label>
                       </div>
 
                     <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
                         <input type="checkbox" id="switchforsound" onclick="playpause()">
-                        <label for="switchforsound" id="labelforsound"></label>
+                        <label for="switchforsound" id="labelforsound"tabindex="0" aria-label="switch sound"></label>
                       </div> 
                       </div><!-- setting div ends -->
                    </div><!-- contact-btn-div -->
@@ -164,17 +164,17 @@ Enjoy your job. :)
         <!-- landing page ends here -->
         <section class="about-section-container" id="about" data-aos="fade-up">
             <div class="about-section">
-                <div class="about-heading"><article class="about-heading-article">&#60;/AboutMe&#62;</article><p class="aboutHeadingP"></p></div>
+                <div class="about-heading"><article class="about-heading-article" tabindex="0"aria-label="About me heading">&#60;/AboutMe&#62;</article><p class="aboutHeadingP"></p></div>
                 
                 <div class="info-dp-section">
                     <div class="about-info">
-                        <p>Hi! My name is Vinod i'm a Web Developer and Digital Visual Artist, I love creating things that exists on the internet. My interest in web development started in 2021 when i thought to upload my Digital Concept Arts Online.</p> <br>
-                        <p>Instead of making a online Concepts Art website, i started enjoying web development. Creating custom things for web taught me a lot about design & development! </p> <br>
-                           <p> My main focus these days is building interesting & creative web designs, I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                        <p tabindex="0">Hi! My name is Vinod i'm a Web Developer and Digital Visual Artist, I love creating things that exists on the internet. My interest in web development started in 2021 when i thought to upload my Digital Concept Arts Online.</p> <br>
+                        <p tabindex="0">Instead of making a online Concepts Art website, i started enjoying web development. Creating custom things for web taught me a lot about design & development! </p> <br>
+                           <p tabindex="0"> My main focus these days is building interesting & creative web designs, I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
 
                     </div>
 
-                    <div class="dp" data-aos="fade-up"><img src="src/jpg/vinnybava.jpg" alt=""></div>
+                    <div class="dp" data-aos="fade-up"><img src="src/jpg/vinnybava.jpg" alt=""tabindex="0" aria-label="image of vinod"></div>
                 </div>
             </div>
         </section>
@@ -182,25 +182,25 @@ Enjoy your job. :)
         
         <section class="skills-section-container" id="skills">
             <div class="skills-section">
-                <div class="skills-heading" data-aos="fade-up"><article class="skills-heading-article">&#60;/Skills&#62;</article><p class="skillsHeadingP"></p></div>
+                <div class="skills-heading" data-aos="fade-up"><article class="skills-heading-article"tabindex="0"aria-label="skills heading">&#60;/Skills&#62;</article><p class="skillsHeadingP"></p></div>
                 
                 <div class="frontend-dev-section">
 
-                    <div class="frontend-dev-heading" data-aos="fade-up">Frontend Developer</div>
-                    <div class="language-speak"><article>>_ Languages i speak:</article></div>
+                    <div class="frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="As a frontend a developer these are the skills i have">Frontend Developer</div>
+                    <div class="language-speak"><article tabindex="0"aria-label="languages i speak below">>_ Languages i speak:</article></div>
                     <div class="languages-section">
 
-                        <div class="language-name"data-aos="fade-up" id="html"><article>HTML</article>
+                        <div class="language-name"data-aos="fade-up" id="html"><article tabindex="0"aria-label="HTML">H T M L</article>
                         <p>INTERMEDIATE!</p></div>
                         
-                        <div class="language-name"data-aos="fade-up" id="css"><article>CSS</article>
+                        <div class="language-name"data-aos="fade-up" id="css"><article tabindex="0"aria-label="C S S">CSS</article>
                             <p>ADVANCED!</p></div>
 
-                            <div class="language-name"data-aos="fade-up"id="bootstrap"><article>BOOTSTRAP</article>
+                            <div class="language-name"data-aos="fade-up"id="bootstrap"><article tabindex="0"aria-label="bootstrap">BOOTSTRAP</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="language-name"data-aos="fade-up"id="react"><article>REACT JS</article>
+                                <div class="language-name"data-aos="fade-up"id="react"><article tabindex="0"aria-label="React J S">REACT JS</article>
                                     <p>BEGINNER!</p></div>
-                                <div class="language-name"data-aos="fade-up"id="js"><article>JAVASCRIPT</article>
+                                <div class="language-name"data-aos="fade-up"id="js"><article tabindex="0"aria-label="Javascript">JAVASCRIPT</article>
                                     <p>INTERMEDIATE!</p></div>
                                     
 
@@ -209,15 +209,15 @@ Enjoy your job. :)
                 </div>
                 <div class="designing-section frontend-dev-section">
 
-                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up">Designer</div>
+                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="as a designer these are the skills i have">Designer</div>
                     <div class="enjoy-designing language-speak" data-aos="fade-up"><article>Things i enjoy Designing:</article></div>
                     <div class="tool-section languages-section">
 
-                        <div class="tool-name language-name" data-aos="fade-up"id="ap"><article>ADOBE PHOTOSHOP</article>
+                        <div class="tool-name language-name" data-aos="fade-up"id="ap"><article tabindex="0"aria-label="Adobe Photoshop">ADOBE PHOTOSHOP</article>
                         <p>ADVANCED!</p></div>
-                            <div class="tool-name language-name" data-aos="fade-up"id="canva"><article>CANVA</article>
+                            <div class="tool-name language-name" data-aos="fade-up"id="canva"><article tabindex="0"aria-label="canva">CANVA</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="tool-name language-name" data-aos="fade-up"id="ai"><article>ADOBE AI</article>
+                                <div class="tool-name language-name" data-aos="fade-up"id="ai"><article tabindex="0"aria-label="Adobe illustrator">ADOBE AI</article>
                                     <p>BEGINNER!</p></div>
                                
                                     
@@ -227,13 +227,13 @@ Enjoy your job. :)
                 </div>
                 <div class="other-languages frontend-dev-section">
 
-                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up">Programmer</div>
+                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="as a programmer skills i have">Programmer</div>
                     <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Other Languages i Know:</article></div>
                     <div class="programming-section languages-section">
 
-                        <div class="language-name language-name" data-aos="fade-up" id="c"><article>C</article>
+                        <div class="language-name language-name" data-aos="fade-up" id="c"><article tabindex="0"aria-label="C a programming language">C</article>
                         <p>INTERMEDIATE!</p></div>
-                        <div class="language-name language-name" data-aos="fade-up"id="cpp"><article>C++</article>
+                        <div class="language-name language-name" data-aos="fade-up"id="cpp"><article tabindex="0"aria-label="C plus plus a programming language">C++</article>
                             <p>BEGINNER!</p></div>  
                     </div>
 
@@ -243,7 +243,7 @@ Enjoy your job. :)
         <!-- skills section ends -->
         <section class="projects-section-container" id="projects">
             <div class="projects-section-div">
-                <div class="projects-heading"><article class="projects-heading-article">&#60;/Projects&#62;</article><p class="projectsHeadingP"></p></div>
+                <div class="projects-heading"><article class="projects-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="projectsHeadingP"></p></div>
                 <div class="project-boxes-div">
 
                     <a href="https://vinodjangid07.github.io/AXOCEAN/"><div class="project-box project-box1" id="project-box1">
@@ -252,7 +252,7 @@ Enjoy your job. :)
                         <i class="fas fa-paperclip"></i>
                     </div>
                     <div class="about-project">
-                    <article>AXOCEAN E-COMMERCE WEBSITE</article>
+                    <article aria-label="Project of E-commerce website">AXOCEAN E-COMMERCE WEBSITE</article>
                     <p>A webpage for E-COMMERCE for helping people to choose their product design and redirect to the FlipKart shopping site. </p>
                 </div>
                 </div></a>
@@ -262,7 +262,7 @@ Enjoy your job. :)
                         <div class="folder-icon"></div>
                         <i class="fas fa-paperclip"></i>
                     </div>
-                    <div class="about-project"><article>AQUAREGIA My College Fest WEBSITE</article>
+                    <div class="about-project"><article aria-label="Project of my college fest website">AQUAREGIA My College Fest WEBSITE</article>
                 <p>A webpage for my college fest to register and participate in college's Events like Sports, Dance, Singing, E-Sports, etc.</p></div>
             </div>
         </a>
@@ -274,16 +274,16 @@ Enjoy your job. :)
     <!-- main ends here -->
 
     <footer>
-        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"><article>&#8592;BACK TO TOP</article> </button>
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"><article aria-label="Back to top">&#8592;BACK TO TOP</article> </button>
         <div class="footercontainer">
-            <div class="two-words"><article>"Learning, Living, and Leveling Up."</article></div>
+            <div class="two-words"><article tabindex="0"aria-label="Learning, Living, and Leveling Up, my quote">"Learning, Living, and Leveling Up."</article></div>
             <div class="social-media-container">
                 <div class="getintouch-heading"><article>GetinTouch();</article></div>
                 <div class="logos">
-            <a href="https://instagram.com/its_.me._vinod?igshid=YmMyMTA2MsY=" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer="target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/vinodjangid07"target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:infovinodjangid@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://instagram.com/its_.me._vinod?igshid=YmMyMTA2MsY=" target="_blank"tabindex="0"aria-label="My instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vinod-jangid-b401111a1?original_referer="target="_blank"aria-label="My Linkdin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/vinodjangid07"target="_blank" aria-label="My github"><i class="fab fa-github"></i></a>
+            <a href="mailto:infovinodjangid@gmail.com" target="_blank"aria-label="My G mail"><i class="far fa-envelope"></i></a>
         </div>
             </div>
             <div class="footer-bottom">
