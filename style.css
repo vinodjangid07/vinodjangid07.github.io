@@ -391,7 +391,7 @@ noscript{
     transform-origin: bottom;
     position: relative;
 }
-/* @keyframes headshake {
+@keyframes headshake {
     0%{
         transform: rotate(-8deg);
     }
@@ -408,7 +408,7 @@ noscript{
         transform: rotate(-8deg);
     }
     
-} */
+}
 
 .logo-top img{
     height: 100%;
@@ -602,7 +602,7 @@ noscript{
     animation: gradient 3s ease infinite;
 
 }
-/* @keyframes gradient {
+@keyframes gradient {
     0% {
         background-position: 0 50%;
     }
@@ -613,11 +613,11 @@ noscript{
     100% {
         background-position: 0 50%;
     }
-} */
-/* #work:hover{
+}
+#work:hover{
     -webkit-animation: vibrate-1 0.3s linear both;
     animation: vibrate-1 0.3s linear both;
-} */
+}
 #work{
     font-size: 8rem;
     font-weight:700;
@@ -981,7 +981,7 @@ noscript{
     width: 100%;
     transition-duration: .5s;
 }
-/* @keyframes gradientforlanguage {
+@keyframes gradientforlanguage {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -991,7 +991,7 @@ noscript{
 	100% {
 		background-position: 0% 50%;
 	}
-} */
+}
 .language-name article{
     font-size: 2.5rem;
     font-weight: 700;
