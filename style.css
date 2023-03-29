@@ -1243,7 +1243,7 @@ noscript{
     cursor: url('click.png'),
     move;
     cursor: url('click.png')10 12;
-    
+    display: none;
 }
 #backtotopbutton article{
 
