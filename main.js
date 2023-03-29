@@ -17,6 +17,7 @@ var audio = document.getElementById("audioPlayer");
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none";
+  document.querySelector('.hey').classList.add('popup');
 })
 
 // preloader script ends here.........
@@ -63,8 +64,13 @@ function playpause() {
     document.getElementById('ai').classList.toggle('language-gradient-class');
     document.getElementById('c').classList.toggle('language-gradient-class');
     document.getElementById('cpp').classList.toggle('language-gradient-class');
-    document.getElementById('project-box1').classList.toggle('language-gradient-class');
-    document.getElementById('project-box2').classList.toggle('language-gradient-class');
+    // document.getElementById('project-box1').classList.toggle('language-gradient-class');
+    // document.getElementById('project-box2').classList.toggle('language-gradient-class');
+    let projectBox = document.querySelectorAll('.project-box');
+    projectBox.forEach(Box => {
+        Box.classList.toggle('language-gradient-class');
+    })
+
   }
 let emptyArea = document.getElementById("emptyarea");
  let mobileTogglemenu = document.getElementById("mobiletogglemenu");
@@ -165,7 +171,7 @@ document.addEventListener("contextmenu", function(e){
 
 let pupils = document.getElementsByClassName('pupil');
 let pupilsArr = Array.from(pupils);
-console.log(pupils);
+// console.log(pupils);
 
 let pupilStartPoint = -1;
 let pupilRange = 3;
