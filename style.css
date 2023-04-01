@@ -120,8 +120,8 @@ body{
         background-size: 60%;
         background-repeat: no-repeat;
         background-position: center;
-        transform: rotate(0deg);
         mix-blend-mode: difference;
+        transition-duration: .5s;
 }
 
 /* .fas{
