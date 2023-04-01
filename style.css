@@ -1266,7 +1266,7 @@ noscript{
 
 #backtotopbutton:hover{
     transform: translate(0px,-20px);
-    text-decoration: line-through;
+    text-decoration: line-through var(--color-white);
 }
 /* footer starts */
 .footercontainer{
