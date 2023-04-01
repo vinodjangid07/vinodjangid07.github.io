@@ -116,15 +116,20 @@ body{
     move;
         cursor: url('click.png')10 12;
         padding: 0px 20px;
+        background-image: url(src/svg/settings-svgrepo-com.svg);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(0deg);
+        mix-blend-mode: difference;
 }
-.fas{
-    /* width: 40px; */
+
+/* .fas{
+    
     color: var(--color-white);
     font-size: 3rem;
     transition-duration: .4s;
-    
-   
-}
+} */
 .settingactivate{
     transform-origin: left;
     width: 200px;
@@ -148,9 +153,9 @@ body{
 #switchforsetting{
     display: none;
 }
-#switchforsetting:checked+#labelforsetting i{ 
-    transform: rotate(360deg);
-    transition-duration: .4s;
+#switchforsetting:checked+#labelforsetting { 
+    transform: rotate(180deg);
+    transition-duration: .5s;
 
 }
 
@@ -391,7 +396,7 @@ noscript{
     transform-origin: bottom;
     position: relative;
 }
-@keyframes headshake {
+/* @keyframes headshake {
     0%{
         transform: rotate(-8deg);
     }
@@ -408,7 +413,7 @@ noscript{
         transform: rotate(-8deg);
     }
     
-}
+} */
 
 .logo-top img{
     height: 100%;
@@ -602,7 +607,7 @@ noscript{
     animation: gradient 3s ease infinite;
 
 }
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0 50%;
     }
@@ -613,7 +618,7 @@ noscript{
     100% {
         background-position: 0 50%;
     }
-}
+} */
 #work:hover{
     -webkit-animation: vibrate-1 0.3s linear both;
     animation: vibrate-1 0.3s linear both;
@@ -981,7 +986,7 @@ noscript{
     width: 100%;
     transition-duration: .5s;
 }
-@keyframes gradientforlanguage {
+/* @keyframes gradientforlanguage {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -991,7 +996,7 @@ noscript{
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 .language-name article{
     font-size: 2.5rem;
     font-weight: 700;
@@ -1232,7 +1237,7 @@ noscript{
     justify-content: center;
     border: none; 
     width:3rem;
-    height:13rem;
+    height:15rem;
     z-index: 101;
     text-align: center;
     transition: all .4s;
@@ -1335,13 +1340,13 @@ noscript{
     align-items: center;
     height: 80px;
 }
-.fab{
-    font-size: 3rem;
-    color: white;
+.SocialHandle{
+    fill: white;
+    width: 60%;
 }
-.far{
-    font-size: 3rem;
-    color: white;
+#GmailLogo{
+    height: 70%;
+    fill: white;
 }
 .social-media-container a:hover{
     box-shadow: 0px 0px 50px 100px #8000ff inset;
