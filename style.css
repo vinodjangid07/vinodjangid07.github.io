@@ -1672,7 +1672,7 @@ transition-duration: 1.6s;
     }
     .text-content{
         padding-left: 0px;
-        padding: 20px;
+        width:80%;
     }
     #hello-friend{
         height: 100px;
