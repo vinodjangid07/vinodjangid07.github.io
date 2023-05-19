@@ -100,7 +100,7 @@ body{
     transform-origin: left;
     transition-duration: .5s;
     gap: 30px;
-    padding: 20px;
+    padding: 20px 0px;
    
 }
 #labelforsetting{
@@ -635,6 +635,7 @@ noscript{
 }
 #work div{
     display: flex;
+	margin: 0px 12px 0px 0px;
 }
 .jello:hover{
     background-clip: text;
