@@ -780,8 +780,8 @@ noscript{
     border-radius: 50%;
     cursor: pointer;
     position: fixed;
-    bottom:8px;
-    left:8px;
+    bottom:10px;
+    left:10px;
     overflow: hidden;
     transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
@@ -790,7 +790,7 @@ noscript{
     rgba(150, 93, 233, 1) 10.8%,
     rgba(99, 88, 238, 1) 94.3%
   );
-  } 
+  }
   
   /* plus sign */
   .sign {
@@ -815,7 +815,7 @@ noscript{
     width: 0%;
     opacity: 0;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     transition-duration: .3s;
   }
