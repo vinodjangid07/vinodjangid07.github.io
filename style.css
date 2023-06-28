@@ -739,7 +739,7 @@ noscript{
     height: 100%;
     background-color: rgba(230, 230, 230, 0.466);
     border: none;
-    border-radius: 30px;
+    border-radius: 7px;
     backdrop-filter: blur(5px);
     color: rgb(0, 0, 0);
     display: flex;
@@ -757,7 +757,7 @@ noscript{
     z-index: -1;
     left: 6px;
     top: 6px;
-    border-radius: 30px;
+    border-radius: 7px;
     pointer-events: none;
     transition: all .3s;
   }
