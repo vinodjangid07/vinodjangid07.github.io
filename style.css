@@ -49,15 +49,15 @@ html {
     cursor:default;
     --color-white: #fff;
     --color-black: #000;
-    --color-dark-mode:#0a0a10;
+    --color-dark-mode:#11111b;
     --color-light-mode:#ece7e1;
     --color-ddd-color: #ddd;
     --color-gray: #c4c4c4;
     --color-purple: #8000ff;
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark:#20222e;
-    
+    --color-navbarBorder-dark:#20222e10;
+    --color-shadowDark:rgba(0, 0, 0, 0.137);
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -529,10 +529,7 @@ noscript{
     color: var(--color-white);
     font-family: fira code;
 }
-#hello-friend:hover{
-    -webkit-animation: vibrate-1 0.3s linear both;
-    animation: vibrate-1 0.3s linear both;
-}
+
 @-webkit-keyframes vibrate-1 {
     0% {
       -webkit-transform: translate(0);
@@ -607,7 +604,7 @@ noscript{
     animation: gradient 3s ease infinite;
 
 }
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0 50%;
     }
@@ -618,11 +615,8 @@ noscript{
     100% {
         background-position: 0 50%;
     }
-}
-#work:hover{
-    -webkit-animation: vibrate-1 0.3s linear both;
-    animation: vibrate-1 0.3s linear both;
-}
+} */
+
 #work{
     font-size: 8rem;
     font-weight:700;
@@ -723,52 +717,66 @@ noscript{
     align-items: center;
     justify-content: flex-start;
 }
-.contact-btn{
+.letsTalkBtn {
+    position: relative;
+    background-color: transparent;
     border: none;
-    background-color:transparent;
-    color: var(--color-white);
-    height: 50px;
-    width: 200px;
-    font-size: 1.5rem;
+    width: 180px;
+    height: 40px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all .3s;
     cursor: url('click.png');
     cursor: url('click.png'),
     url('click.png');
     cursor: url('click.png'),
     move;
         cursor: url('click.png')10 12;
-    font-family: fira code;
-    font-weight: 600;
-    transition-duration: .3s;
-    border: 2px solid var(--color-white);
-    position: relative;
-    border-radius: 50px;
-}
-.contact-btn::before{
-    content: "";
-    position: absolute;
-    width:100%;
+  }
+  
+  .letsTalkBtn-text {
+    width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+    background-color: rgba(230, 230, 230, 0.466);
+    border: none;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+  }
+  
+  .letsTalkBtn-BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(150deg, #71cbff, #8000ff);
     z-index: -1;
-    transition-duration: .3s;
-    background-color: var(--color-white);
-    transform: scaleX(0);
-    border-radius: 50px;
-
-}
-
-.contact-btn:hover::before{
-    transform: scaleX(1);
-    transition-duration: .3s;
-}
-
-.contact-btn:hover{
-    letter-spacing: 2px;
-    transition-duration: .4s;
-    color: var(--color-black);
-}
-
+    left: 6px;
+    top: 6px;
+    border-radius: 30px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .letsTalkBtn:hover {
+    transform: translateY(-2px) translateX(-2px);
+  }
+  
+  .letsTalkBtn:hover .letsTalkBtn-BG {
+    transform: translateY(2px) translateX(2px);
+  }
+  
+  .letsTalkBtn:active {
+    transform: translateY(7px) translateX(7px);
+  }
+  
+  .letsTalkBtn:active .letsTalkBtn-BG {
+    transform: translateY(-7px) translateX(-7px);
+  }
 .resume-btn {
     z-index:9998;
     display: flex;
@@ -1040,7 +1048,7 @@ noscript{
     width: 45%;
     padding: 30px;
     transform-style: preserve-3d;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.427);
+    box-shadow: 0px 10px 20px var(--color-shadowDark);
     
 }
 
@@ -1059,7 +1067,7 @@ noscript{
     width: 100%;
     transition-duration: .5s;
 }
-@keyframes gradientforlanguage {
+/* @keyframes gradientforlanguage {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -1069,7 +1077,7 @@ noscript{
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 .language-name article{
     font-size: 2.5rem;
     font-weight: 700;
@@ -1154,7 +1162,7 @@ noscript{
     move;
         cursor: url('click.png')10 12;
     position: relative;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.622);
+    box-shadow: 0px 10px 20px var(--color-shadowDark);
 }
 .language-gradient-class{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.113);
