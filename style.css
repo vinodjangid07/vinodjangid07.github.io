@@ -604,7 +604,7 @@ noscript{
     animation: gradient 3s ease infinite;
 
 }
-/* @keyframes gradient {
+@keyframes gradient {
     0% {
         background-position: 0 50%;
     }
@@ -615,7 +615,7 @@ noscript{
     100% {
         background-position: 0 50%;
     }
-} */
+}
 
 #work{
     font-size: 8rem;
@@ -1067,7 +1067,7 @@ noscript{
     width: 100%;
     transition-duration: .5s;
 }
-/* @keyframes gradientforlanguage {
+@keyframes gradientforlanguage {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -1077,7 +1077,7 @@ noscript{
 	100% {
 		background-position: 0% 50%;
 	}
-} */
+}
 .language-name article{
     font-size: 2.5rem;
     font-weight: 700;
