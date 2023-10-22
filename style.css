@@ -496,8 +496,9 @@ noscript{
 .main{
     width: 100%;
     height: fit-content;
-    
+
 }
+
 .landing-page-container{
     background-size: contain;
     background-position: center;
