@@ -78,7 +78,6 @@ let emptyArea = document.getElementById("emptyarea");
 function hamburgerMenu() {
     document.body.classList.toggle("stopscrolling");
  document.getElementById("mobiletogglemenu").classList.toggle("show-toggle-menu");
- document.getElementById("emptyarea").classList.toggle("blur-class");
 document.getElementById("burger-bar1").classList.toggle("hamburger-animation1");
 document.getElementById("burger-bar2").classList.toggle("hamburger-animation2");
 document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
@@ -87,18 +86,6 @@ document.getElementById("burger-bar3").classList.toggle("hamburger-animation3");
 function hidemenubyli(){
 document.body.classList.toggle("stopscrolling");
 document.getElementById("mobiletogglemenu").classList.remove("show-toggle-menu");
-document.getElementById("emptyarea").classList.remove("blur-class");
-document.getElementById("burger-bar1").classList.remove("hamburger-animation1");
-document.getElementById("burger-bar2").classList.remove("hamburger-animation2");
-document.getElementById("burger-bar3").classList.remove("hamburger-animation3");
-}
-
-// close Mobile hamburger toggle menu while clicking in empty area
-emptyArea.addEventListener('click',hidetogglemenu);
-function hidetogglemenu(){
-document.body.classList.remove("stopscrolling");
-document.getElementById("mobiletogglemenu").classList.remove("show-toggle-menu");
-document.getElementById("emptyarea").classList.remove("blur-class");
 document.getElementById("burger-bar1").classList.remove("hamburger-animation1");
 document.getElementById("burger-bar2").classList.remove("hamburger-animation2");
 document.getElementById("burger-bar3").classList.remove("hamburger-animation3");
