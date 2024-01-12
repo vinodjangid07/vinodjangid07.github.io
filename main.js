@@ -202,4 +202,3 @@ const windowResize = (event) => {
 
 window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
-
