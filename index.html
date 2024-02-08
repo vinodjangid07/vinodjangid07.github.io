@@ -63,13 +63,15 @@ What are you doing here?! you sneaky developer...
   
   </head>
 <body class="body">
-    <audio loop="" id="audioPlayer" autoplay="" style="display:none"><source src="src/mp3/preloader.mp3" type="audio/mp3"></audio>
+    <audio loop="" id="audioPlayer" style="display:none"><source src="src/mp3/preloader.mp3" type="audio/mp3"></audio>
     <div id="preloader"></div>
     <noscript>Allow Javascript</noscript>
      
     <header> 
         
-         
+        <div class="cursor outer"></div>
+
+
         <div class="navbar" id="navbar">
             <div class="hey">Hey!</div>
             <div class="logo" tabindex="0" aria-label="vinod jangid logo">
@@ -155,7 +157,7 @@ What are you doing here?! you sneaky developer...
                     <div class="setting-container" id="setting-container">
                         <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
 
-                        <label for="switchforsetting" id="labelforsetting"tabindex="0" aria-label="settings for sound and appearance"></label>
+                        <label for="switchforsetting" class="needtobeinvert" id="labelforsetting"tabindex="0" aria-label="settings for sound and appearance"></label>
 
                       <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
                         <input type="checkbox" id="switchforvisualmode"
@@ -165,7 +167,7 @@ What are you doing here?! you sneaky developer...
 
                     <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
                         <input type="checkbox" id="switchforsound" onclick="playpause()">
-                        <label for="switchforsound" id="labelforsound"tabindex="0" aria-label="switch sound"></label>
+                        <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound" class="needtobeinvert"></label>
                       </div> 
                       </div><!-- setting div ends -->
                    </div><!-- contact-btn-div -->
@@ -204,85 +206,90 @@ What are you doing here?! you sneaky developer...
                 
                 <div class="frontend-dev-section">
 
-                    <div class="frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="As a frontend a developer these are the skills i have">Frontend Developer</div>
-                    <div class="language-speak" data-aos="fade-up"><article tabindex="0"aria-label="languages i speak below">>_ Languages i speak:</article></div>
-                    <div class="languages-section">
+                    <div class="frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="As a frontend a developer these are the skills i have">Tech Stack</div>
+                    <div class="tech-stack-wrapper">
+                  <div class="tech-stack-box"  data-aos="fade-up">
+                    <img src="./src/png/htmllogo.png" alt="Html" class="tech-stack-logo">
+                  </div>
 
-                        <div class="language-name"data-aos="fade-up" id="html"><article tabindex="0"aria-label="HTML">H T M L</article>
-                        </div>
-                        
-                        <div class="language-name"data-aos="fade-up" id="css"><article tabindex="0"aria-label="C S S">CSS</article>
-                            </div>
+                  <div class="tech-stack-box"  data-aos="fade-up">
+                    <img src="./src/png/csslogo.png" alt="css" class="tech-stack-logo">
+                  </div>
 
-                            <div class="language-name"data-aos="fade-up"id="bootstrap"><article tabindex="0"aria-label="bootstrap">BOOTSTRAP</article>
-                                </div>
-                                <div class="language-name"data-aos="fade-up"id="react"><article tabindex="0"aria-label="React J S">REACT JS</article>
-                                    </div>
-                                <div class="language-name"data-aos="fade-up"id="js"><article tabindex="0"aria-label="Javascript">JAVASCRIPT</article>
-                                    </div>
-                                    
+                  <div class="tech-stack-box"  data-aos="fade-up">
+                    <img src="./src/png/jslogo.png" alt="js" class="tech-stack-logo">
+                  </div>
 
-                    </div>
+                  <div class="tech-stack-box"  data-aos="fade-up">
+                    <img src="./src/png/bootstraplogo.png" alt="bootstrap" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/reactlogo.png" alt="react" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/githublogo.png" alt="github" class="tech-stack-logo needtobeinvert">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/gitlogo.png" alt="git" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/clogo.png" alt="c language" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/cpplogo.png" alt="c++ language" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/pslogo.png" alt="photoshop" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/figmalogo.png" alt="figma" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/ailogo.png" alt="adobe illustrator" class="tech-stack-logo">
+                  </div>
+
+                  <div class="tech-stack-box" data-aos="fade-up">
+                    <img src="./src/png/canvalogo.png" alt="canva" class="tech-stack-logo">
+                  </div>
 
                 </div>
-                <div class="designing-section frontend-dev-section">
-
-                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="as a designer these are the skills i have">Designer</div>
-                    <div class="enjoy-designing language-speak" data-aos="fade-up"><article>Things i enjoy Designing:</article></div>
-                    <div class="tool-section languages-section">
-
-                        <div class="tool-name language-name" data-aos="fade-up"id="ap"><article tabindex="0"aria-label="Adobe Photoshop">ADOBE PHOTOSHOP</article>
-                        </div>
-                            <div class="tool-name language-name" data-aos="fade-up"id="canva"><article tabindex="0"aria-label="canva">CANVA</article>
-                                </div>
-                                <div class="tool-name language-name" data-aos="fade-up"id="ai"><article tabindex="0"aria-label="Adobe illustrator">ADOBE AI</article>
-                                    </div>
-                                    <div class="tool-name language-name" data-aos="fade-up"id="ai"><article tabindex="0"aria-label="Figma">FIGMA</article>
-                                        </div>
-                               
-                                    
-
-                    </div>
-
                 </div>
-                <div class="other-languages frontend-dev-section">
-
-                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="as a programmer skills i have">Programmer</div>
-                    <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Other Languages i Know:</article></div>
-                    <div class="programming-section languages-section">
-
-                        <div class="language-name language-name" data-aos="fade-up" id="c"><article tabindex="0"aria-label="C a programming language">C</article>
-                       </div>
-                        <div class="language-name language-name" data-aos="fade-up"id="cpp"><article tabindex="0"aria-label="C plus plus a programming language">C++</article>
-                           </div>  
-                    </div>
-
-                </div>
+               
+               
             </div>
         </section>
         <!-- skills section ends -->
         <section class="projects-section-container" id="projects">
             <div class="projects-section-div">
-                <div class="section-heading"><article class="section-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="sectionHeadingP"></p></div>
+                <div class="section-heading" data-aos="fade-up"><article class="section-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="sectionHeadingP"></p></div>
                 <div class="project-boxes-div">
 
-                    <a href="https://vinodjangid07.github.io/AXOCEAN/" target="_blank"><div class="project-box project-box1" id="project-box1">
-                    <div class="info-div">
-                        <img src="src/webp/axocean-favicon.webp" alt="" class="faviconforProject">
-                        <article class="ProjectHeading">AXOCEAN</article>
-                        <p class="ProjectDescription">E-commerce website frontend work to choose people their favorite design of product and redirect to flipkart shopping site.</p>
-                        <button class="cta">
-                            <span>See the Live Site</span>
-                            <svg viewBox="0 0 13 10" height="10px" width="15px">
-                              <path d="M1,5 L11,5"></path>
-                              <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                          </button>
-                    </div>
-                    <div class="image-div"><img src="src/webp/AXOCEAN-project.webp" alt=""></div>
+                    <a href="https://vinodjangid07.github.io/Pexelicons" target="_blank" data-aos="fade-up"><div class="project-box project-box2" id="project-box2">
+                        <div class="info-div">
+                            <img src="src/jpg/Frame 28.png" alt="" class="faviconforProject">
+                            <article class="ProjectHeading">Pexelicons</article>
+                            <p class="ProjectDescription">Pexelicons: A world of personalized file folder icons to transform your PC into a reflection of your style.</p>
+                            <button class="cta">
+                                <span>See the Live Site</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                  <path d="M1,5 L11,5"></path>
+                                  <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                              </button>
+                        </div>
+                        <div class="image-div"><img src="src/jpg/Group 76.png" alt=""></div>
                 </div></a>
+
 <!-- ---------------------- -->
-                <a href="https://vinodjangid07.github.io/Aquaregia" target="_blank"><div class="project-box project-box2" id="project-box2">
+                <a href="https://vinodjangid07.github.io/Aquaregia" target="_blank" data-aos="fade-up"><div class="project-box project-box2" id="project-box2">
                     <div class="info-div">
                         <img src="src/svg/aquaregia-favicon.svg" alt="" class="faviconforProjectAquaregia">
                         <article class="ProjectHeading">Aquaregia</article>
@@ -297,9 +304,25 @@ What are you doing here?! you sneaky developer...
                     </div>
                     <div class="image-div"><img src="src/webp/Aquaregia-project.webp" alt=""></div>
             </div></a>
+             <!-- ---------------------- -->
+        <a href="https://vinodjangid07.github.io/QR-Generator/" target="_blank" data-aos="fade-up"><div class="project-box project-box4" id="project-box4">
+            <div class="info-div">
+                <img src="src/png/qrcodefavicon.png" alt="" class="faviconforProject">
+                <article class="ProjectHeading">QR Generator</article>
+                <p class="ProjectDescription">A webpage to make a QR Code from text using API.</p>
+                <button class="cta">
+                    <span>See the Live Site</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </div>
+            <div class="image-div"><img src="src/webp/QRgeneratorProject.webp" alt=""></div>
+    </div></a>
 
             <!-- ---------------------- -->
-            <a href="https://react-netflix-clone20.netlify.app/" target="_blank"><div class="project-box project-box3" id="project-box3">
+            <a href="https://react-netflix-clone20.netlify.app/" target="_blank" data-aos="fade-up"><div class="project-box project-box3" id="project-box3">
                 <div class="info-div">
                     <img src="src/ico/netflixfavicon.ico" alt="" class="faviconforProject">
                     <article class="ProjectHeading">React Netflix Clone</article>
@@ -315,27 +338,29 @@ What are you doing here?! you sneaky developer...
                 <div class="image-div"><img src="src/webp/NetflixCloneProject.webp" alt=""></div>
         </div></a>
 
-        <!-- ---------------------- -->
-        <a href="https://vinodjangid07.github.io/QR-Generator/" target="_blank"><div class="project-box project-box4" id="project-box4">
-            <div class="info-div">
-                <img src="src/png/qrcodefavicon.png" alt="" class="faviconforProjectAquaregia">
-                <article class="ProjectHeading">QR Generator</article>
-                <p class="ProjectDescription">A webpage to make a QR Code from text using API.</p>
-                <button class="cta">
-                    <span>See the Live Site</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </button>
-            </div>
-            <div class="image-div"><img src="src/webp/QRgeneratorProject.webp" alt=""></div>
-    </div></a>
+       
 
      <!-- ---------------------- -->
-     <a href="https://vinodjangid07.github.io/Food-Menu/" target="_blank"><div class="project-box project-box5" id="project-box5">
+     
+     <a href="https://vinodjangid07.github.io/AXOCEAN/" target="_blank" data-aos="fade-up"><div class="project-box project-box1" id="project-box1">
         <div class="info-div">
-            <img src="src/ico/foodmenufavicon.ico" alt="" class="faviconforProjectAquaregia">
+            <img src="src/webp/axocean-favicon.webp" alt="" class="faviconforProject">
+            <article class="ProjectHeading">AXOCEAN</article>
+            <p class="ProjectDescription">E-commerce website frontend work to choose people their favorite design of product and redirect to flipkart shopping site.</p>
+            <button class="cta">
+                <span>See the Live Site</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+        </div>
+        <div class="image-div"><img src="src/webp/AXOCEAN-project.webp" alt=""></div>
+    </div></a>
+     <!-- ---------------------- -->
+     <a href="https://vinodjangid07.github.io/Food-Menu/" target="_blank" data-aos="fade-up"><div class="project-box project-box5" id="project-box5">
+        <div class="info-div">
+            <img src="src/ico/foodmenufavicon.ico" alt="" class="faviconforProject">
             <article class="ProjectHeading">Bhukkad A Food Company</article>
             <p class="ProjectDescription">React based UI of a fast food company webpage.</p>
             <button class="cta">
@@ -400,5 +425,33 @@ What are you doing here?! you sneaky developer...
     window.open(url, '_blank');
   }
 </script>
+
+
+<script>
+   const cursor = document.querySelector(".cursor");
+const links = document.querySelectorAll("a,label,button");
+
+window.addEventListener("mousemove",  (e) => {
+  
+  let x = e.pageX;
+  let y = e.pageY;
+  
+  
+  cursor.style.left = `${x}px`;
+  cursor.style.top = `${y}px`;
+    
+    links.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        cursor.classList.add("hover");
+      })
+      link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("hover");
+      })
+    })
+    
+  
+  
+})
+    </script>
 
 </html>

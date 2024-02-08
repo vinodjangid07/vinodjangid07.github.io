@@ -40,36 +40,11 @@ function playpause() {
 
   function visualmode(){
     document.body.classList.toggle('light-mode');
-    document.getElementById('labelforsound').classList.toggle('invertsoundlabel');
-    document.querySelector('.about-heading-article').classList.toggle('heading-article-light');
-    document.querySelector('.aboutHeadingP').classList.toggle('heading-article-light');
+    var elements = document.querySelectorAll('.needtobeinvert');
+    elements.forEach(function(element) {
+        element.classList.toggle('invertapplied');
+    });
 
-    document.querySelector('.skills-heading-article').classList.toggle('heading-article-light');
-    document.querySelector('.skillsHeadingP').classList.toggle('heading-article-light');
-
-    document.querySelector('.projects-heading-article').classList.toggle('heading-article-light');
-    document.querySelector('.projectsHeadingP').classList.toggle('heading-article-light');
-   
-    document.querySelector('.frontend-dev-heading').classList.toggle('heading-article-light');
-    document.querySelector('.designing-heading').classList.toggle('heading-article-light');
-    document.querySelector('.languages-heading').classList.toggle('heading-article-light');
-
-    document.getElementById('html').classList.toggle('language-gradient-class');
-    document.getElementById('css').classList.toggle('language-gradient-class');
-    document.getElementById('bootstrap').classList.toggle('language-gradient-class');
-    document.getElementById('react').classList.toggle('language-gradient-class');
-    document.getElementById('js').classList.toggle('language-gradient-class');
-    document.getElementById('ap').classList.toggle('language-gradient-class');
-    document.getElementById('canva').classList.toggle('language-gradient-class');
-    document.getElementById('ai').classList.toggle('language-gradient-class');
-    document.getElementById('c').classList.toggle('language-gradient-class');
-    document.getElementById('cpp').classList.toggle('language-gradient-class');
-    // document.getElementById('project-box1').classList.toggle('language-gradient-class');
-    // document.getElementById('project-box2').classList.toggle('language-gradient-class');
-    let projectBox = document.querySelectorAll('.project-box');
-    projectBox.forEach(Box => {
-        Box.classList.toggle('language-gradient-class');
-    })
 
   }
 let emptyArea = document.getElementById("emptyarea");
@@ -202,3 +177,6 @@ const windowResize = (event) => {
 
 window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
+
+
+
