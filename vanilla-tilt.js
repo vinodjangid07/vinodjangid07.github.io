@@ -496,3 +496,4 @@ var VanillaTilt = (function () {
     return VanillaTilt;
     
     }());
+    // https://github.com/vinodjangid07
