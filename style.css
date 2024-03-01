@@ -1490,12 +1490,13 @@ border: none;
     top: 0px;
     /* right: 0; */
     width: 100vw;
-    height: 150px;
+    height: 115px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     z-index: 9998;
     background-color:transparent;
+
 }
 .hamburgerbase{
     width: 80%;
@@ -1730,7 +1731,8 @@ transition-duration: 1s;
     }
     #hamburger{
         margin-right:20px ;
-        height: 150px;
+        height: 115px;
+        align-items: flex-end;
     }
     .hamburgerbase{
         height: 70px;
