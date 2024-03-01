@@ -56,7 +56,7 @@ html {
     --color-purple: #8000ff;
     --color-light-purple: #cf59e6;
     --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark:#20222e10;
+    --color-navbarBorder-dark:#e2e2e207;
     --color-shadowDark:rgba(0, 0, 0, 0.137);
     --static-heading-gradient-blue: #b0f3f1;
     --static-heading-gradient-pink: #ffcfdf;
@@ -244,9 +244,9 @@ body{
 }
 header{
     width: 100%;
-    height: 150px;
+    height: 115px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 #preloader{
@@ -284,7 +284,8 @@ noscript{
     background-color: transparent;
 }
 .navbar{
-    background-color: rgba(255, 255, 255, 0.079);
+    background-image: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    /* border: 1px solid var(--tech-stack-box-border-color); */
     backdrop-filter: blur(10px);
     height: 80px;
     width: 80%;
@@ -295,6 +296,7 @@ noscript{
     position:fixed;
     z-index: 999;
     border: 1px solid var(--color-navbarBorder-dark);
+    
     border-radius: 50px;
     overflow: hidden;
 }
@@ -521,14 +523,11 @@ noscript{
 
 .landing-page-container{
     width: 100%;
-    height: 74vh;
+    height: calc(100vh - 115px);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-
-
 }
 .text-content{
     display: flex;
@@ -873,7 +872,7 @@ noscript{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .about-section{
     width: 60%;
