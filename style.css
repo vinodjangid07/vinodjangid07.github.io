@@ -492,35 +492,57 @@ noscript{
 .main{
     width: 100%;
     height: fit-content;
+    position: relative;
+    overflow-x: hidden;
+}
 
+/* blob */
+.blob{
+    position: absolute;
+    right: -15%;
+    top: 0;
+    background-color: var(--color-light-purple);
+    width: 600px;
+    height: 100vh;
+    border-radius: 50%;
+    filter: blur(300px);
+    opacity: .3;
+    animation: breath 1s linear infinite alternate-reverse;
+}
+@keyframes breath{
+    from{
+        opacity: 0.3;
+        
+    }
+    to{
+        opacity: 0.5;
+    }
 }
 
 .landing-page-container{
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 95vh;
+    height: 74vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
+
+
 }
 .text-content{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     height: 100%;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 300px;
+    justify-content: center;
+    /* padding-left: 300px; */
 }
 #hello-friend{
     font-size: 3.5rem;
     font-weight: 600;
     width:fit-content;
-    height: 100px;
     display: flex;
     align-items: flex-end;
     color: var(--color-white);
@@ -699,7 +721,7 @@ noscript{
   }
   
 #info-para{
-    width: 50%;
+    width: 75%;
     font-size: 2rem;
     font-weight: 400;
     padding-top: 30px;
@@ -851,6 +873,7 @@ noscript{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 150px;
 }
 .about-section{
     width: 60%;
@@ -1268,8 +1291,11 @@ noscript{
 }
 /* footer starts */
 .footercontainer{
-    background-color: rgb(0, 0, 0);
+     background-color: #0b0b0b;
     width: 100%;
+    border-top: 1px solid var(--tech-stack-box-border-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 .two-words{
     color: rgb(179, 179, 179);
@@ -1399,20 +1425,22 @@ border: none;
     html {
         font-size: 60%;
     }
-    .text-content{
-        padding-left: 200px;
-    }
+    /* .text-content{
+        padding-left: 250px;
+    } */
    
   }
   @media screen and (max-width:1300px) {
    
   }
+
   @media screen and (max-width:1200px) {
     html {
         font-size: 60%;
     }
     .text-content{
-        padding-left: 100px;
+        /* padding-left: 100px; */
+        width: 80%;
     }
     .about-section{
         width: 80%;
@@ -1444,6 +1472,9 @@ border: none;
   @media screen and (max-width:998px) {
     html {
         font-size: 55%;
+    }
+    .blob{
+        display: none;
     }
     .cursor{
         display: none;
@@ -1718,8 +1749,12 @@ transition-duration: 1s;
     #hello-friend{
         font-size: 2.5rem;
     }
+    
     .landing-page-container{
         height: 85vh;
+    }
+    .text-content{
+        justify-content: flex-start;
     }
     .project-box{
         height: 550px;
@@ -1814,5 +1849,11 @@ transition-duration: 1s;
   }
   /* https://github.com/vinodjangid07 */
   /* responsive code above */
-  
-  
+/*   
+
+  @media screen and (min-height: 900px) and (max-width: 600px) {
+
+    .text-content{
+        justify-content: flex-start;
+    }
+  } */
