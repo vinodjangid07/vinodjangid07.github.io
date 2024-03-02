@@ -521,7 +521,7 @@ noscript{
     width: 600px;
     height: 100vh;
     border-radius: 50%;
-    filter: blur(200px);
+    filter: blur(300px);
     opacity: .3;
     animation: breath 1s linear infinite alternate-reverse;
 }
