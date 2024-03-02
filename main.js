@@ -130,12 +130,12 @@ document.addEventListener("contextmenu", function(e){
 
 
 
-let footerPupils = document.getElementsByClassName('footer-pupil');
-let footerpupilsArr = Array.from(footerPupils);
-// console.log(pupils);
+let Pupils = document.getElementsByClassName('footer-pupil');
+let pupilsArr = Array.from(Pupils);
 
-let footerpupilStartPoint = -10;
-let footerpupilRange = 18;
+let pupilStartPoint = -10;
+let pupilRangeX = 20;
+let pupilRangeY = 15;
 
 // mouse X 
 let mouseXStartPoint = 0;
@@ -159,12 +159,12 @@ const mouseMove = (event) => {
     fracYValue = currentYPosition / mouseYEndPoint;
  
     // footer
-    let footerpupilXCurrrentPosition = footerpupilStartPoint + (fracXValue * footerpupilRange);
-    let footerpupilYCurrrentPosition = footerpupilStartPoint + (fracYValue * footerpupilRange);
+    let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilRangeX);
+    let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilRangeY);
 
     // footer
-    footerpupilsArr.forEach((footercurPupil) => {
-      footercurPupil.style.transform= `translate(${footerpupilXCurrrentPosition}px, ${footerpupilYCurrrentPosition}px)`;
+    pupilsArr.forEach((curPupil) => {
+      curPupil.style.transform= `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
   })
 
 }

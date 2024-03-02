@@ -1290,8 +1290,8 @@ footer{
     position: relative;
     height: fit-content;
     border-top: 1px solid var(--tech-stack-box-border-color);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
     overflow: hidden;
 }
 .footer-background{
@@ -1435,6 +1435,7 @@ footer{
 .footer-avatar-img{
     width: 100%;
     z-index:2;
+    /* opacity: .2; */
 }
 .footer-avatar-face{
     position: absolute;
@@ -1455,7 +1456,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: blur(0.6px);
+    
 }
 .footer-pupil{
     width: 20px;
@@ -1463,13 +1464,30 @@ footer{
     background-color: black;
     border-radius: 50%;
     border: 5px solid rgb(65, 51, 51);
+    filter: blur(0.6px);
 }
+
 .footer-right-eye{
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.308) inset,
-    10px 10px 5px rgba(41, 33, 33, 0.548) inset;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.233) inset,
+    10px 10px 5px rgba(41, 33, 33, 0.644) inset;
+    position: relative;
 }
 .footer-left-eye{
     box-shadow: -10px -15px 5px rgba(0, 0, 0, 0.349) inset;
+    position: relative;
+
+}
+.footer-avatar-eye::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(214, 214, 214, 0.726);
+    z-index: 2;
+    filter: blur(.2px);
+    left: 15px;
+    transform: rotate(45deg);
 }
 .footer-bottom{
     background-color: #0b0b0b;
@@ -1510,9 +1528,6 @@ footer{
     html {
         font-size: 60%;
     }
-    /* .text-content{
-        padding-left: 250px;
-    } */
    
   }
   @media screen and (max-width:1300px) {
@@ -1524,7 +1539,6 @@ footer{
         font-size: 60%;
     }
     .text-content{
-        /* padding-left: 100px; */
         width: 80%;
     }
     .about-section{
@@ -1675,7 +1689,6 @@ transition-duration: 1s;
 }
 
 .mobile-navbar-tabs-ul{
-    /* animation: dropdownlist .3s linear; */
     background-color: var(--color-dark-mode);
     width: 100%;
     height: 100%;
