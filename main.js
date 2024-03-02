@@ -131,14 +131,10 @@ document.addEventListener("contextmenu", function(e){
 
 
 let footerPupils = document.getElementsByClassName('footer-pupil');
-let pupils = document.getElementsByClassName('pupil');
-let pupilsArr = Array.from(pupils);
 let footerpupilsArr = Array.from(footerPupils);
 // console.log(pupils);
 
-let pupilStartPoint = -1;
 let footerpupilStartPoint = -10;
-let pupilRange = 2.5;
 let footerpupilRange = 18;
 
 // mouse X 
@@ -161,16 +157,11 @@ const mouseMove = (event) => {
 
     currentYPosition = event.clientY;
     fracYValue = currentYPosition / mouseYEndPoint;
-    // nav
-    let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilRange);
-    let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilRange);
+ 
     // footer
     let footerpupilXCurrrentPosition = footerpupilStartPoint + (fracXValue * footerpupilRange);
     let footerpupilYCurrrentPosition = footerpupilStartPoint + (fracYValue * footerpupilRange);
-// nav
-    pupilsArr.forEach((curPupil) => {
-        curPupil.style.transform= `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
-    })
+
     // footer
     footerpupilsArr.forEach((footercurPupil) => {
       footercurPupil.style.transform= `translate(${footerpupilXCurrrentPosition}px, ${footerpupilYCurrrentPosition}px)`;
@@ -188,17 +179,3 @@ const windowResize = (event) => {
 window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
 
-
-window.addEventListener('scroll', function() {
-  var footer = document.getElementById('footer');
-  var rect = footer.getBoundingClientRect();
-  var isVisible = (rect.top <= window.innerHeight) && (rect.bottom >= 0);
-  if (isVisible) {
-    document.querySelector('.logo').classList.add('teleport-avatar');
-    document.querySelector('.footer-avatar-container').classList.add('big-teleport-avatar');
-  }
-  else{
-    document.querySelector('.logo').classList.remove('teleport-avatar');
-    document.querySelector('.footer-avatar-container').classList.remove('big-teleport-avatar');
-  }
-});
