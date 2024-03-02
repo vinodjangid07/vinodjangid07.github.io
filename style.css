@@ -78,29 +78,43 @@ html {
 body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
+    /* cursor: none; */
 }
 
 
-.cursor {
-    z-index: 999999999;
-    position: absolute;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
+.cursor-inner{
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-light-blue);
+}
+.cursor-outer{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+}
+.cursor-inner,
+.cursor-outer{
+    position: fixed;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
     pointer-events: none;
-  }
-  
-  .outer {
-    border: 1px solid #8BA1F2;
-  }
-  
-  .cursor.hover {
-    transform: translate(-50%, -50%) scale(2);
-    transition: transform 250ms ease-in-out;
-  }
-  
-  
+}
+.cursor-inner.hover{
+    width: 25px;
+    height: 25px;
+    transition: all .2s;
+    mix-blend-mode: difference;
+}
+.cursor-outer.hover{
+    width: 50px;
+    height: 50px;
+    transition: all .2s;
+}
+
+
 /* for light mode */
 .light-mode{
     --color-dark-mode:#ece7e1;
@@ -743,6 +757,7 @@ noscript{
     height: 40px;
     border-radius: 0px;
     cursor: pointer;
+    transition: all .3s;
 
   }
   
@@ -1475,7 +1490,8 @@ border: none;
     .blob{
         display: none;
     }
-    .cursor{
+    .cursor-inner,
+    .cursor-outer{
         display: none;
     }
     .navbar-tabs-ul{
