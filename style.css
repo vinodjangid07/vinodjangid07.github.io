@@ -863,12 +863,13 @@ noscript{
 /* about section starts from here */
 .about-section-container{
     width: 100%;
-    height: fit-content;
+    height:fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    padding-top: 200px;
+
 }
 .about-section{
     width: 60%;
@@ -967,7 +968,7 @@ noscript{
  */
  /* skills section starts */
 .skills-section-container{
-    margin-top: 150px;
+    padding-top: 150px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -1060,17 +1061,42 @@ noscript{
     background-image: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     border: 1px solid var(--tech-stack-box-border-color);
     /* box-shadow: 0px 10px 20px var(--color-shadowDark); */
+    position: relative;
 }
 .tech-stack-box img{
     width: 80%;
 }
+.tech-stack-box:hover .tooltip {
+    opacity: 1;
+    transition-duration: .3s;
+  }
+.tooltip {
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    background: linear-gradient(to bottom right,var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    border: 1px solid var(--tech-stack-box-border-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    font-size: 1.6rem;
+    backdrop-filter: blur(5px);
+    font-weight: 500;
+  }
+  
 
 
 /* skills section ends */
 /* ######################################################## */
 /* projects section starts */
 .projects-section-container{
-    margin: 150px 0;
+    padding: 150px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1117,8 +1143,7 @@ noscript{
     gap: 50px;
     padding: 50px;
 }
-.project-boxes-div a{
-    text-decoration: none;
+.project-box-wrapper{
     width: 100%;
 }
 .project-box{
@@ -1177,6 +1202,26 @@ noscript{
     font-weight: 400;
 }
 /* Project visit button */
+.project-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.github-redirect{
+ text-decoration: none;    
+ width: 50px;
+}
+.github-redirect img{
+    width: 45px;
+    height: auto;
+    transition: all .3s;
+    filter: brightness(2);
+}
+.github-redirect:hover img{
+    filter: brightness(4);
+}
 .cta {
     position: relative;
     padding: 12px 18px;
@@ -1184,12 +1229,15 @@ noscript{
     border: none;
     background: none;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
    }
    
-   .cta:before {
+   .cta::before {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     display: block;
     border-radius: 50px;
@@ -1223,7 +1271,7 @@ noscript{
     transform: translateX(-5px);
     transition: all 0.3s ease;
    }
-   
+
    .cta:hover:before {
     width: 100%;
     /* background: #b1dae7; */
