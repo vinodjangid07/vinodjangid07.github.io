@@ -1749,6 +1749,7 @@ transition-duration: 1s;
 }
 .mobile-navbar-tabs-ul a{
     text-decoration: none;
+    color: var(--color-white);
 }
 .mobile-navbar-tabs-li{
     text-align: center;
@@ -1760,7 +1761,7 @@ transition-duration: 1s;
     position: relative;
     cursor: pointer;
     font-family: fira code;
-    color: var(--color-white);
+
     height: 30px;
     width: fit-content;
 }

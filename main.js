@@ -67,8 +67,8 @@ document.getElementById("burger-bar3").classList.remove("hamburger-animation3");
 }
 
 const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('.navbar .navbar-tabs .navbar-tabs-ul a li');
-const mobilenavLi = document.querySelectorAll('.mobiletogglemenu .mobile-navbar-tabs-ul a li');
+const navLi = document.querySelectorAll('.navbar .navbar-tabs .navbar-tabs-ul li');
+const mobilenavLi = document.querySelectorAll('.mobiletogglemenu .mobile-navbar-tabs-ul li');
 
 window.addEventListener('scroll', ()=>{
   let current = "";
