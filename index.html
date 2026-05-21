@@ -36,12 +36,25 @@ What are you doing here?! you sneaky developer...
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
-<body class="body">
+<body class="body has-announcement">
   <audio loop="" id="audioPlayer" style="display: none">
     <source src="src/mp3/preloader.mp3" type="audio/mp3" />
   </audio>
   <div id="preloader"></div>
   <noscript>Allow Javascript</noscript>
+
+  <!-- announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-content">
+      <span class="announcement-emoji">🚀</span>
+      <span class="announcement-text">
+        You're viewing the V1 portfolio. The redesigned V2 is now live at 
+        <a href="https://vinodjangid.site" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          vinodjangid.site<svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>!
+      </span>
+    </div>
+  </div>
 
   <header>
     <div class="cursor-inner" id="cursor-inner"></div>
@@ -353,31 +366,9 @@ What are you doing here?! you sneaky developer...
               <img src="./src/png/contentfulcms.png" alt="contentful skill" class="tech-stack-logo" />
               <span class="tooltip">CONTENTFUL</span>
             </li>
-
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
-              <span class="tooltip">C</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/pslogo.png" alt="photoshop skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE PS</span>
-            </li>
-
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
               <span class="tooltip">FIGMA</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/ailogo.png" alt="adobe illustrator skill" class="tech-stack-logo" />
-              <span class="tooltip">ADOBE AI</span>
             </li>
           </ul>
         </div>
@@ -675,15 +666,6 @@ What are you doing here?! you sneaky developer...
       });
     });
   </script>
- <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('vinodjangid07', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#794bc4',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
 </body>
 
 </html>
